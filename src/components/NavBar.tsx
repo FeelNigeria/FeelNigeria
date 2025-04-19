@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 interface DropdownLink {
@@ -33,23 +34,34 @@ const Navbar: React.FC<NavbarProps> = ({
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
-    <div className={`container-fluid p-0  ${isSticky ? "sticky-top" : ""}`}>
+    <div
+      className={`container-fluid p-0  ${isSticky ? "fixed-top shadow" : ""}`}
+    >
       <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
         <Link
           to="/"
           className={`navbar-brand p-0 ${isSticky ? "text-white" : ""}`}
         >
           <h1 className="m-0">
+            
             <i className="fa fa-map-marker-alt me-3"></i>
+            
             {brand}
+          
           </h1>
         </Link>
         <button
+         
           className="navbar-toggler"
+         
           type="button"
+         
           data-bs-toggle="collapse"
+         
           data-bs-target="#navbarCollapse"
+        
         >
           <span className="fa fa-bars"></span>
         </button>
@@ -60,9 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 <div className="nav-item dropdown" key={link.title}>
                   <a
                     href="#"
-                    className={`nav-link dropdown-toggle ${
-                      isSticky ? "text-white" : ""
-                    }`}
+                    className="nav-link dropdown-toggle"
                     data-bs-toggle="dropdown"
                   >
                     {link.title}
@@ -82,9 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({
               ) : (
                 <Link
                   to={link.href ?? "#"}
-                  className={`nav-item nav-link ${
-                    isSticky ? "text-white" : ""
-                  } ${link.active ? "active" : ""}`}
+                  className={`nav-item nav-link ${link.active ? "active" : ""}`}
                   key={link.title}
                 >
                   {link.title}
