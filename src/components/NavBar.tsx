@@ -45,23 +45,16 @@ const Navbar: React.FC<NavbarProps> = ({
           className={`navbar-brand p-0 ${isSticky ? "text-white" : ""}`}
         >
           <h1 className="m-0">
-            
             <i className="fa fa-map-marker-alt me-3"></i>
-            
+
             {brand}
-          
           </h1>
         </Link>
         <button
-         
           className="navbar-toggler"
-         
           type="button"
-         
           data-bs-toggle="collapse"
-         
           data-bs-target="#navbarCollapse"
-        
         >
           <span className="fa fa-bars"></span>
         </button>
@@ -69,10 +62,17 @@ const Navbar: React.FC<NavbarProps> = ({
           <div className={`navbar-nav ms-auto py-0`}>
             {navLinks.map((link) =>
               link.dropdown ? (
-                <div className="nav-item dropdown" key={link.title}>
+                <div
+                  className={`nav-item dropdown ${
+                    isSticky ? "text-white" : ""
+                  }`}
+                  key={link.title}
+                >
                   <a
                     href="#"
-                    className="nav-link dropdown-toggle"
+                    className={`nav-link dropdown-toggle ${
+                      isSticky ? "text-white" : ""
+                    }`}
                     data-bs-toggle="dropdown"
                   >
                     {link.title}
@@ -92,7 +92,9 @@ const Navbar: React.FC<NavbarProps> = ({
               ) : (
                 <Link
                   to={link.href ?? "#"}
-                  className={`nav-item nav-link ${link.active ? "active" : ""}`}
+                  className={`nav-item nav-link ${
+                    isSticky ? "text-white" : ""
+                  } ${link.active ? "active" : ""}`}
                   key={link.title}
                 >
                   {link.title}
