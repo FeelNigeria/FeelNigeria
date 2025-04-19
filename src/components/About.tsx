@@ -1,8 +1,6 @@
 import React from 'react';
-import Spinner from '../components/Spinner';
 import TopBar from '../components/TopBar';
 import Footer from '../components/Footer';
-import NavBar from './NavBar';
 
 const About: React.FC = () => {
     return (
