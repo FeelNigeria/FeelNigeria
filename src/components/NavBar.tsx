@@ -14,15 +14,19 @@ interface NavLink {
   dropdown?: DropdownLink[];
 }
 
-interface NavbarProps {
+interface Props {
   brand?: string;
   navLinks: NavLink[];
+  selectedNavLink: string;
+  onSelectNavLink: (title: string) => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({
-  brand = "Feel Nigeria",
+const Navbar: React.FC<Props> = ({
   navLinks,
-}) => {
+  onSelectNavLink,
+  selectedNavLink,
+  brand = "Feel Nigeria",
+}: Props) => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -42,7 +46,9 @@ const Navbar: React.FC<NavbarProps> = ({
       <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
         <Link
           to="/"
-          className={`navbar-brand p-0 ${isSticky ? "text-white" : ""}`}
+          className={`navbar-brand p-0 ${
+            isSticky ? "text-white" : "text-success"
+          }`}
         >
           <h1 className="m-0">
             <i className="fa fa-map-marker-alt me-3"></i>
@@ -64,14 +70,14 @@ const Navbar: React.FC<NavbarProps> = ({
               link.dropdown ? (
                 <div
                   className={`nav-item dropdown ${
-                    isSticky ? "text-white" : ""
+                    isSticky ? "text-white" : "text-green"
                   }`}
                   key={link.title}
                 >
                   <a
                     href="#"
                     className={`nav-link dropdown-toggle ${
-                      isSticky ? "text-white" : ""
+                      isSticky ? "text-white" : "text-green"
                     }`}
                     data-bs-toggle="dropdown"
                   >
@@ -93,9 +99,10 @@ const Navbar: React.FC<NavbarProps> = ({
                 <Link
                   to={link.href ?? "#"}
                   className={`nav-item nav-link ${
-                    isSticky ? "text-white" : ""
-                  } ${link.active ? "active" : ""}`}
+                    isSticky ? "text-white" : "text-green"
+                  } ${link.title == selectedNavLink ? "bg-success text-white" : ""}`}
                   key={link.title}
+                  onClick={() => onSelectNavLink(link.title)}
                 >
                   {link.title}
                 </Link>
@@ -104,7 +111,7 @@ const Navbar: React.FC<NavbarProps> = ({
           </div>
           <Link
             to="/book"
-            className="btn btn-primary rounded-pill py-2 px-4 ms-lg-4"
+            className="btn btn-success rounded-pill py-2 px-4 ms-lg-4"
           >
             Book Now
           </Link>
