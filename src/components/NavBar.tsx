@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 interface DropdownLink {
   title: string;
   href: string;
@@ -41,18 +42,23 @@ const Navbar: React.FC<Props> = ({
 
   return (
     <div
-      className={`container-fluid p-0  ${isSticky ? "fixed-top shadow" : ""}`}
+      className={`container-fluid p-0 ${
+        isSticky ? "fixed-top shadow" : "position-absolute"
+      }`}
     >
-      <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+      <nav
+        className={`navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-4 py-lg-1 ${
+          isSticky ? "bg-light" : ""
+        }`}
+      >
         <Link
           to="/"
           className={`navbar-brand p-0 ${
-            isSticky ? "text-white" : "text-success"
+            isSticky ? "text-success" : "text-white"
           }`}
         >
           <h1 className="m-0">
             <i className="fa fa-map-marker-alt me-3"></i>
-
             {brand}
           </h1>
         </Link>
@@ -77,7 +83,7 @@ const Navbar: React.FC<Props> = ({
                   <a
                     href="#"
                     className={`nav-link dropdown-toggle ${
-                      isSticky ? "text-white" : "text-green"
+                      isSticky ? "" : "text-white"
                     }`}
                     data-bs-toggle="dropdown"
                   >
@@ -99,8 +105,10 @@ const Navbar: React.FC<Props> = ({
                 <Link
                   to={link.href ?? "#"}
                   className={`nav-item nav-link ${
-                    isSticky ? "text-white" : "text-green"
-                  } ${link.title == selectedNavLink ? "bg-success text-white" : ""}`}
+                    isSticky ? "" : "text-white"
+                  } ${
+                    link.title == selectedNavLink ? "bg-success text-white" : ""
+                  }`}
                   key={link.title}
                   onClick={() => onSelectNavLink(link.title)}
                 >
@@ -110,7 +118,7 @@ const Navbar: React.FC<Props> = ({
             )}
           </div>
           <Link
-            to="/book"
+            to={"/booking"}
             className="btn btn-success rounded-pill py-2 px-4 ms-lg-4"
           >
             Book Now

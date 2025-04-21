@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import Navbar from "./components/NavBar";
 import HeroCarousel from "./components/HeroCarousel";
 import TopBar from "./components/TopBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import BookingPage from "./components/Booking";
+import AboutUs from "./components/AboutUs";
+import ServicesSection from "./components/ServiceSection";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -62,6 +66,11 @@ const App: React.FC = () => {
         navLinks={navLinks}
       />
       <HeroCarousel slides={heroSlides} />
+      <AboutUs />
+      <ServicesSection />
+      <Routes>
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
     </>
   );
 };
