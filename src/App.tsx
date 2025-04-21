@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BookingPage from "./components/Booking";
 import AboutUs from "./components/AboutUs";
 import ServicesSection from "./components/ServiceSection";
+import Destination from "./components/Destination";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -68,6 +69,7 @@ const App: React.FC = () => {
       <HeroCarousel slides={heroSlides} />
       <AboutUs />
       <ServicesSection />
+      <Destination />
       <Routes>
         <Route path="/booking" element={<BookingPage />} />
       </Routes>
