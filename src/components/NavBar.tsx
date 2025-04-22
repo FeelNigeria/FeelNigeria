@@ -8,7 +8,7 @@ interface DropdownLink {
   href: string;
 }
 
-interface NavLink {
+export interface NavLink {
   title: string;
   href?: string;
   active?: boolean;
