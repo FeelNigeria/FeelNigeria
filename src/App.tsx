@@ -16,6 +16,7 @@ import TravelGuide from "./components/TravelGuide";
 import Blog from "./components/Blog";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import Copyright from "./components/Copyright";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -89,6 +90,7 @@ const App: React.FC = () => {
       <Testimonials />
       <Subscribe />
       <Footer />
+      <Copyright />
       <Routes>
         <Route path="/booking" element={<BookingPage />} />
       </Routes>
