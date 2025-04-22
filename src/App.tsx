@@ -1,25 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/NavBar";
-import HeroCarousel from "./components/HeroCarousel";
 import TopBar from "./components/TopBar";
 import { Routes, Route } from "react-router-dom";
 import BookingPage from "./components/Booking";
-import AboutUs from "./components/AboutUs";
-import ServicesSection from "./components/ServiceSection";
-import Destination from "./components/Destination";
-import Subscribe from "./components/Subscribe";
-import Explore from "./components/Explore";
-import Package from "./components/Package";
-import Gallery from "./components/Gallery";
-import TourBooking from "./components/TourBooking";
-import TravelGuide from "./components/TravelGuide";
-import Blog from "./components/Blog";
-import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Copyright from "./components/Copyright";
 import BackToTop from "./components/BackToTop";
 import About from "./components/About";
 import Home from "./components/Home";
+import Subscribe from "./components/Subscribe";
+import Blog from "./components/Blog";
+import Package from "./components/Package";
+import Services from "./components/Services";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -65,17 +57,12 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/booking" element={<BookingPage />} />
-        <Route
-          path="/about"
-          element={
-            <About
-              onSelectNavLink={(title) => setSelectedNavLink(title)}
-              selectedNavLink={selectedNavLink}
-              navLinks={navLinks}
-            />
-          }
-        />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services standAlone={true} />} />
+        <Route path="/packages" element={<Package standAlone={true} />} />
+        <Route path="/blog" element={<Blog standAlone={true} />} />
       </Routes>
+      <Subscribe />
       <Footer />
       <Copyright />
       {showBackToTop && <BackToTop />}

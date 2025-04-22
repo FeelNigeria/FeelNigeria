@@ -5,7 +5,7 @@ import Explore from "./Explore";
 import Gallery from "./Gallery";
 import HeroCarousel from "./HeroCarousel";
 import Package from "./Package";
-import ServicesSection from "./ServiceSection";
+import ServicesSection from "./Services";
 import Subscribe from "./Subscribe";
 import Testimonials from "./Testimonials";
 import TourBooking from "./TourBooking";
@@ -53,7 +53,6 @@ const Home = () => {
       <TravelGuide />
       <Blog />
       <Testimonials />
-      <Subscribe />
     </>
   );
 };
