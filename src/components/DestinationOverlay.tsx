@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDragon } from "@fortawesome/free-solid-svg-icons";
 
 interface Props {
   location: string;
@@ -10,11 +12,11 @@ const DestinationOverlay = ({ location, img, dataLightbox }: Props) => {
   dataLightbox = `destination-${dataLightbox}`;
   if (!img) img = `img/${dataLightbox}.jpg`;
   return (
-    <div className="destination-overlay">
-      <div className="p-4">
+    <div>
+      <div className="destination-overlay p-4">
         <a
           href="#"
-          className="btn btn-primary text-white rounded-pill border py-2 px-3"
+          className="btn btn-success text-white rounded-pill border py-2 px-3"
         >
           20 Photos
         </a>
@@ -25,7 +27,8 @@ const DestinationOverlay = ({ location, img, dataLightbox }: Props) => {
       </div>
       <div className="search-icon">
         <a href={img} data-lightbox={dataLightbox}>
-          <i className="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i>
+          <i className="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-success"></i>
+          {/* <FontAwesomeIcon icon={faDragon} className="btn btn-light" /> */}
         </a>
       </div>
     </div>
