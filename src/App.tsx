@@ -12,6 +12,7 @@ import Explore from "./components/Explore";
 import Package from "./components/Package";
 import Gallery from "./components/Gallery";
 import TourBooking from "./components/TourBooking";
+import TravelGuide from "./components/TravelGuide";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -80,6 +81,7 @@ const App: React.FC = () => {
       <Package />
       <Gallery />
       <TourBooking />
+      <TravelGuide />
       <Routes>
         <Route path="/booking" element={<BookingPage />} />
       </Routes>
