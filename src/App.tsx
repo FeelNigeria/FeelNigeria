@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/NavBar";
 import HeroCarousel from "./components/HeroCarousel";
 import TopBar from "./components/TopBar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import BookingPage from "./components/Booking";
 import AboutUs from "./components/AboutUs";
 import ServicesSection from "./components/ServiceSection";
@@ -10,7 +10,7 @@ import Destination from "./components/Destination";
 import Subscribe from "./components/Subscribe";
 import Explore from "./components/Explore";
 import Package from "./components/Package";
-import PackageImageItem from "./components/PackageImageItem";
+import Gallery from "./components/Gallery";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -61,18 +61,6 @@ const heroSlides = [
 ];
 
 const App: React.FC = () => {
-  const item = {
-    src: "img/packages-2.jpg",
-    description: "Adventure Package",
-    duration: 3,
-    people: 2,
-    price: "449.00",
-    title: "Adventure Package",
-    subtitle: "Hotel Deals",
-    rating: 5,
-    fullDescription: `Embark on an exhilarating journey filled with outdoor activities private guided tours, and personalized services designed for an indulgent escape.`,
-  };
-
   const [selectedNavLink, setSelectedNavLink] = useState("Home");
   return (
     <>
@@ -89,6 +77,7 @@ const App: React.FC = () => {
       <Subscribe />
       <Explore />
       <Package />
+      <Gallery />
       <Routes>
         <Route path="/booking" element={<BookingPage />} />
       </Routes>
