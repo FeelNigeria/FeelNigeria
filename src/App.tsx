@@ -12,6 +12,7 @@ import Subscribe from "./components/Subscribe";
 import Blog from "./components/Blog";
 import Package from "./components/Package";
 import Services from "./components/Services";
+import ContactUs from "./components/ContactUs";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -56,11 +57,12 @@ const App: React.FC = () => {
       />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/booking" element={<ContactUs />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services standAlone={true} />} />
         <Route path="/packages" element={<Package standAlone={true} />} />
         <Route path="/blog" element={<Blog standAlone={true} />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Subscribe />
       <Footer />
