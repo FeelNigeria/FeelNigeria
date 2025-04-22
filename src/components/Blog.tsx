@@ -32,7 +32,7 @@ const Blog = ({ standAlone }: Props) => {
                   <div className="blog-img-inner">
                     <img
                       className="img-fluid w-100 rounded-top"
-                      src="img/blog-1.jpg"
+                      src="src/assets/img/blog-1.jpg"
                       alt="Image"
                     ></img>
                     <div className="blog-icon">
@@ -86,7 +86,7 @@ const Blog = ({ standAlone }: Props) => {
                   <div className="blog-img-inner">
                     <img
                       className="img-fluid w-100 rounded-top"
-                      src="img/blog-2.jpg"
+                      src="src/assets/img/blog-2.jpg"
                       alt="Image"
                     ></img>
                     <div className="blog-icon">
@@ -140,7 +140,7 @@ const Blog = ({ standAlone }: Props) => {
                   <div className="blog-img-inner">
                     <img
                       className="img-fluid w-100 rounded-top"
-                      src="img/blog-3.jpg"
+                      src="src/assets/img/blog-3.jpg"
                       alt="Image"
                     ></img>
                     <div className="blog-icon">

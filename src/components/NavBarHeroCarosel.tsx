@@ -6,7 +6,7 @@ const NavBarHeroCarousel = () => {
           <h1 className="m-0">
             <i className="fa fa-map-marker-alt me-3"></i>Feel Nigeria
           </h1>
-          {/* <!-- <img src="img/logo.png" alt="Logo"> --> */}
+          {/* <!-- <img src="src/assets/img/logo.png" alt="Logo"> --> */}
         </a>
         <button
           className="navbar-toggler"
@@ -89,7 +89,7 @@ const NavBarHeroCarousel = () => {
           <div className="carousel-inner" role="listbox">
             <div className="carousel-item active">
               <img
-                src="img/carousel-2.jpg"
+                src="src/assets/img/carousel-2.jpg"
                 className="img-fluid"
                 alt="Image"
               ></img>
@@ -120,7 +120,7 @@ const NavBarHeroCarousel = () => {
             </div>
             <div className="carousel-item">
               <img
-                src="img/carousel-1.jpg"
+                src="src/assets/img/carousel-1.jpg"
                 className="img-fluid"
                 alt="Image"
               ></img>
@@ -152,7 +152,7 @@ const NavBarHeroCarousel = () => {
             </div>
             <div className="carousel-item">
               <img
-                src="img/carousel-3.jpg"
+                src="src/assets/img/carousel-3.jpg"
                 className="img-fluid"
                 alt="Image"
               ></img>

@@ -18,7 +18,7 @@ interface imageItemDetail {
 
 const imageItemDetails: imageItemDetail[] = [
   {
-    src: "img/packages-4.jpg",
+    src: "src/assets/img/packages-4.jpg",
     description: "Cultural Heritage Package",
     duration: 3,
     people: 2,
@@ -33,7 +33,7 @@ const imageItemDetails: imageItemDetail[] = [
               `,
   },
   {
-    src: "img/packages-2.jpg",
+    src: "src/assets/img/packages-2.jpg",
     description: "Adventure Package",
     duration: 3,
     people: 2,
@@ -44,7 +44,7 @@ const imageItemDetails: imageItemDetail[] = [
     fullDescription: `Embark on an exhilarating journey filled with outdoor activities private guided tours, and personalized services designed for an indulgent escape.`,
   },
   {
-    src: "img/packages-3.jpg",
+    src: "src/assets/img/packages-3.jpg",
     description: "Food and Wine Package",
     duration: 3,
     people: 2,
@@ -57,7 +57,7 @@ const imageItemDetails: imageItemDetail[] = [
     rating: 5,
   },
   {
-    src: "img/packages-3.jpg",
+    src: "src/assets/img/packages-3.jpg",
     description: "Luxury Retreat Package",
     duration: 3,
     people: 2,
@@ -70,7 +70,7 @@ const imageItemDetails: imageItemDetail[] = [
     rating: 5,
   },
   {
-    src: "img/packages-3.jpg",
+    src: "src/assets/img/packages-3.jpg",
     description: "Wildlife & Nature Package",
     duration: 3,
     people: 2,
@@ -82,7 +82,7 @@ const imageItemDetails: imageItemDetail[] = [
     rating: 5,
   },
   {
-    src: "img/packages-1.jpg",
+    src: "src/assets/img/packages-1.jpg",
     description: "Romance Package",
     duration: 3,
     people: 2,

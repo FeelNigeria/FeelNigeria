@@ -75,7 +75,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-1.jpg"
+                    src="src/assets/img/gallery-1.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -92,7 +92,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-1.jpg"
+                      href="src/assets/img/gallery-1.jpg"
                       data-lightbox="gallery-1"
                       className="my-auto"
                     >
@@ -104,7 +104,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-2.jpg"
+                    src="src/assets/img/gallery-2.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -121,7 +121,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-2.jpg"
+                      href="src/assets/img/gallery-2.jpg"
                       data-lightbox="gallery-2"
                       className="my-auto"
                     >
@@ -133,7 +133,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-3.jpg"
+                    src="src/assets/img/gallery-3.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -150,7 +150,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-3.jpg"
+                      href="src/assets/img/gallery-3.jpg"
                       data-lightbox="gallery-3"
                       className="my-auto"
                     >
@@ -162,7 +162,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-4.jpg"
+                    src="src/assets/img/gallery-4.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -179,7 +179,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-4.jpg"
+                      href="src/assets/img/gallery-4.jpg"
                       data-lightbox="gallery-4"
                       className="my-auto"
                     >
@@ -191,7 +191,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-5.jpg"
+                    src="src/assets/img/gallery-5.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -208,7 +208,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-5.jpg"
+                      href="src/assets/img/gallery-5.jpg"
                       data-lightbox="gallery-5"
                       className="my-auto"
                     >
@@ -220,7 +220,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-6.jpg"
+                    src="src/assets/img/gallery-6.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -237,7 +237,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-6.jpg"
+                      href="src/assets/img/gallery-6.jpg"
                       data-lightbox="gallery-6"
                       className="my-auto"
                     >
@@ -249,7 +249,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-7.jpg"
+                    src="src/assets/img/gallery-7.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -266,7 +266,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-7.jpg"
+                      href="src/assets/img/gallery-7.jpg"
                       data-lightbox="gallery-7"
                       className="my-auto"
                     >
@@ -278,7 +278,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-3 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-8.jpg"
+                    src="src/assets/img/gallery-8.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -295,7 +295,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-8.jpg"
+                      href="src/assets/img/gallery-8.jpg"
                       data-lightbox="gallery-8"
                       className="my-auto"
                     >
@@ -307,7 +307,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-9.jpg"
+                    src="src/assets/img/gallery-9.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -324,7 +324,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-9.jpg"
+                      href="src/assets/img/gallery-9.jpg"
                       data-lightbox="gallery-9"
                       className="my-auto"
                     >
@@ -336,7 +336,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-3 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-10.jpg"
+                    src="src/assets/img/gallery-10.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -353,7 +353,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-10.jpg"
+                      href="src/assets/img/gallery-10.jpg"
                       data-lightbox="gallery-10"
                       className="my-auto"
                     >
@@ -369,7 +369,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-2.jpg"
+                    src="src/assets/img/gallery-2.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -386,7 +386,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-2.jpg"
+                      href="src/assets/img/gallery-2.jpg"
                       data-lightbox="gallery-2"
                       className="my-auto"
                     >
@@ -398,7 +398,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-3.jpg"
+                    src="src/assets/img/gallery-3.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -415,7 +415,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-3.jpg"
+                      href="src/assets/img/gallery-3.jpg"
                       data-lightbox="gallery-3"
                       className="my-auto"
                     >
@@ -431,7 +431,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-2.jpg"
+                    src="src/assets/img/gallery-2.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -448,7 +448,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-2.jpg"
+                      href="src/assets/img/gallery-2.jpg"
                       data-lightbox="gallery-2"
                       className="my-auto"
                     >
@@ -460,7 +460,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-3.jpg"
+                    src="src/assets/img/gallery-3.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -477,7 +477,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-3.jpg"
+                      href="src/assets/img/gallery-3.jpg"
                       data-lightbox="gallery-3"
                       className="my-auto"
                     >
@@ -493,7 +493,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-2.jpg"
+                    src="src/assets/img/gallery-2.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -510,7 +510,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-2.jpg"
+                      href="src/assets/img/gallery-2.jpg"
                       data-lightbox="gallery-2"
                       className="my-auto"
                     >
@@ -522,7 +522,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-3.jpg"
+                    src="src/assets/img/gallery-3.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -539,7 +539,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-3.jpg"
+                      href="src/assets/img/gallery-3.jpg"
                       data-lightbox="gallery-3"
                       className="my-auto"
                     >
@@ -555,7 +555,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-2.jpg"
+                    src="src/assets/img/gallery-2.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -572,7 +572,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-2.jpg"
+                      href="src/assets/img/gallery-2.jpg"
                       data-lightbox="gallery-2"
                       className="my-auto"
                     >
@@ -584,7 +584,7 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="img/gallery-3.jpg"
+                    src="src/assets/img/gallery-3.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
@@ -601,7 +601,7 @@ const Gallery = () => {
                   </div>
                   <div className="gallery-plus-icon">
                     <a
-                      href="img/gallery-3.jpg"
+                      href="src/assets/img/gallery-3.jpg"
                       data-lightbox="gallery-3"
                       className="my-auto"
                     >

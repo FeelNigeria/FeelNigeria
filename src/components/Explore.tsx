@@ -45,7 +45,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="img/explore-tour-1.jpg"
+                      src="src/assets/img/explore-tour-1.jpg"
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -70,7 +70,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="img/explore-tour-2.jpg"
+                      src="src/assets/img/explore-tour-2.jpg"
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -95,7 +95,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="img/explore-tour-3.jpg"
+                      src="src/assets/img/explore-tour-3.jpg"
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -121,7 +121,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="img/explore-tour-4.jpg"
+                      src="src/assets/img/explore-tour-4.jpg"
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -146,7 +146,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="img/explore-tour-5.jpg"
+                      src="src/assets/img/explore-tour-5.jpg"
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -172,7 +172,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="img/explore-tour-6.jpg"
+                      src="src/assets/img/explore-tour-6.jpg"
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -200,7 +200,7 @@ const Explore = () => {
               <div className="InternationalTour-carousel owl-carousel">
                 <div className="international-item">
                   <img
-                    src="img/explore-tour-1.jpg"
+                    src="src/assets/img/explore-tour-1.jpg"
                     className="img-fluid w-100 rounded"
                     alt="Image"
                   ></img>
@@ -227,7 +227,7 @@ const Explore = () => {
                 </div>
                 <div className="international-item">
                   <img
-                    src="img/explore-tour-2.jpg"
+                    src="src/assets/img/explore-tour-2.jpg"
                     className="img-fluid w-100 rounded"
                     alt="Image"
                   ></img>
@@ -253,7 +253,7 @@ const Explore = () => {
                 </div>
                 <div className="international-item">
                   <img
-                    src="img/explore-tour-3.jpg"
+                    src="src/assets/img/explore-tour-3.jpg"
                     className="img-fluid w-100 rounded"
                     alt="Image"
                   ></img>
@@ -278,7 +278,7 @@ const Explore = () => {
                 </div>
                 <div className="international-item">
                   <img
-                    src="img/explore-tour-4.jpg"
+                    src="src/assets/img/explore-tour-4.jpg"
                     className="img-fluid w-100 rounded"
                     alt="Image"
                   ></img>
@@ -302,7 +302,7 @@ const Explore = () => {
                 </div>
                 <div className="international-item">
                   <img
-                    src="img/explore-tour-5.jpg"
+                    src="src/assets/img/explore-tour-5.jpg"
                     className="img-fluid w-100 rounded"
                     alt="Image"
                   ></img>

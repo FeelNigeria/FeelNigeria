@@ -12,7 +12,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="img/guide-1.jpg"
+                    src="src/assets/img/guide-1.jpg"
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>
@@ -57,7 +57,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="img/guide-2.jpg"
+                    src="src/assets/img/guide-2.jpg"
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>
@@ -102,7 +102,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="img/guide-3.jpg"
+                    src="src/assets/img/guide-3.jpg"
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>
@@ -147,7 +147,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="img/guide-4.jpg"
+                    src="src/assets/img/guide-4.jpg"
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>

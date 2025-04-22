@@ -6,7 +6,7 @@ const HeroSection = () => {
           <h1 className="m-0">
             <i className="fa fa-map-marker-alt me-3"></i>Feel Nigeria
           </h1>
-          <img src="img/logo.png" alt="Logo"></img>
+          <img src="src/assets/img/logo.png" alt="Logo"></img>
         </a>
         <button
           className="navbar-toggler"

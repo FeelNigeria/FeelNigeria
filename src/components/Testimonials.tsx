@@ -57,7 +57,7 @@ const Testimonials = () => {
               </div>
               <div className="testimonial-img p-1">
                 <img
-                  src="img/testimonial-1.jpg"
+                  src="src/assets/img/testimonial-1.jpg"
                   className="img-fluid rounded-circle"
                   alt="Image"
                 ></img>
@@ -86,7 +86,7 @@ const Testimonials = () => {
               </div>
               <div className="testimonial-img p-1">
                 <img
-                  src="img/testimonial-2.jpg"
+                  src="src/assets/img/testimonial-2.jpg"
                   className="img-fluid rounded-circle"
                   alt="Image"
                 ></img>
@@ -115,7 +115,7 @@ const Testimonials = () => {
               </div>
               <div className="testimonial-img p-1">
                 <img
-                  src="img/testimonial-3.jpg"
+                  src="src/assets/img/testimonial-3.jpg"
                   className="img-fluid rounded-circle"
                   alt="Image"
                 ></img>
@@ -145,7 +145,7 @@ const Testimonials = () => {
               </div>
               <div className="testimonial-img p-1">
                 <img
-                  src="img/testimonial-4.jpg"
+                  src="src/assets/img/testimonial-4.jpg"
                   className="img-fluid rounded-circle"
                   alt="Image"
                 ></img>

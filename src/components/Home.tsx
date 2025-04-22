@@ -13,7 +13,7 @@ import TravelGuide from "./TravelGuide";
 
 const heroSlides = [
   {
-    image: "img/carousel-2.jpg",
+    image: "src/assets/img/carousel-1.jpg",
     alt: "Slide 1",
     subheading: "Feel Nigeria",
     heading: "Let's tour Nigeria Together!",
@@ -21,7 +21,7 @@ const heroSlides = [
     buttonText: "Discover Now",
   },
   {
-    image: "img/carousel-1.jpg",
+    image: "src/assets/img/carousel-1.jpg",
     alt: "Slide 2",
     subheading: "Feel Nigeria",
     heading: "Find Your Perfect Tour At Travel",
@@ -29,7 +29,7 @@ const heroSlides = [
     buttonText: "Discover Now",
   },
   {
-    image: "img/carousel-3.jpg",
+    image: "src/assets/img/carousel-3.jpg",
     alt: "Slide 3",
     subheading: "Feel Nigeria",
     heading: "You Like To Go?",

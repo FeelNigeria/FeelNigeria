@@ -86,7 +86,7 @@ const Destination = () => {
                       <div className="destination-img">
                         <img
                           className="img-fluid rounded w-100"
-                          src="img/destination-1.jpg"
+                          src="src/assets/img/destination-1.jpg"
                           alt=""
                         ></img>
                         <DestinationOverlay
@@ -99,7 +99,7 @@ const Destination = () => {
                       <div className="destination-img">
                         <img
                           className="img-fluid rounded w-100"
-                          src="img/destination-2.jpg"
+                          src="src/assets/img/destination-2.jpg"
                           alt=""
                         ></img>
                         <DestinationOverlay
@@ -112,7 +112,7 @@ const Destination = () => {
                       <div className="destination-img">
                         <img
                           className="img-fluid rounded w-100"
-                          src="img/destination-7.jpg"
+                          src="src/assets/img/destination-7.jpg"
                           alt=""
                         ></img>
                         <DestinationOverlay
@@ -125,7 +125,7 @@ const Destination = () => {
                       <div className="destination-img">
                         <img
                           className="img-fluid rounded w-100"
-                          src="img/destination-8.jpg"
+                          src="src/assets/img/destination-8.jpg"
                           alt=""
                         ></img>
                         <DestinationOverlay
@@ -140,7 +140,7 @@ const Destination = () => {
                   <div className="destination-img h-100">
                     <img
                       className="img-fluid rounded w-100 h-100"
-                      src="img/destination-9.jpg"
+                      src="src/assets/img/destination-9.jpg"
                       style={{ objectFit: "cover", minHeight: "300px" }}
                       alt=""
                     ></img>
@@ -151,7 +151,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-4.jpg"
+                      src="src/assets/img/destination-4.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -164,7 +164,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-5.jpg"
+                      src="src/assets/img/destination-5.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -177,7 +177,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-6.jpg"
+                      src="src/assets/img/destination-6.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -194,7 +194,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-5.jpg"
+                      src="src/assets/img/destination-5.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -207,7 +207,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-6.jpg"
+                      src="src/assets/img/destination-6.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay location="Zuma Rock" dataLightbox="6" />
@@ -221,7 +221,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-5.jpg"
+                      src="src/assets/img/destination-5.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -234,7 +234,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-6.jpg"
+                      src="src/assets/img/destination-6.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -251,7 +251,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-5.jpg"
+                      src="src/assets/img/destination-5.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -264,7 +264,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-6.jpg"
+                      src="src/assets/img/destination-6.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -281,7 +281,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-5.jpg"
+                      src="src/assets/img/destination-5.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -294,7 +294,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-6.jpg"
+                      src="src/assets/img/destination-6.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -311,7 +311,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-5.jpg"
+                      src="src/assets/img/destination-5.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay
@@ -324,7 +324,7 @@ const Destination = () => {
                   <div className="destination-img">
                     <img
                       className="img-fluid rounded w-100"
-                      src="img/destination-6.jpg"
+                      src="src/assets/img/destination-6.jpg"
                       alt=""
                     ></img>
                     <DestinationOverlay

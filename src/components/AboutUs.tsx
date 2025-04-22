@@ -14,7 +14,7 @@ const AboutUs: React.FC = () => {
               }}
             >
               <img
-                src="img/about-img.jpg"
+                src="src/assets/img/about-img.jpg"
                 className="img-fluid w-100 h-100"
                 alt="About"
               />
@@ -23,7 +23,7 @@ const AboutUs: React.FC = () => {
           <div
             className="col-lg-7"
             style={{
-              background: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(img/about-img-1.png)`,
+              background: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(src/assets/img/about-img-1.png)`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
             }}
