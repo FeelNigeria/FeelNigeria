@@ -8,17 +8,17 @@ const Footer: React.FC = () => {
           <div className="col-md-6 col-lg-6 col-xl-3">
             <div className="footer-item d-flex flex-column">
               <h4 className="mb-4 text-white">Get In Touch</h4>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-home me-2"></i> 20, Ajasa Street off King
                 George IV, Onikan Lagos Nigeria
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-envelope me-2"></i> info@feelnigeria.com
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-phone me-2"></i> +234 803 475 1038
               </a>
-              <a href="" className="mb-3">
+              <a href="" className="mb-3 text-decoration-none">
                 <i className="fas fa-print me-2"></i> +234 802 892 4008
               </a>
               <div className="d-flex align-items-center">
@@ -53,22 +53,22 @@ const Footer: React.FC = () => {
           <div className="col-md-6 col-lg-6 col-xl-3">
             <div className="footer-item d-flex flex-column">
               <h4 className="mb-4 text-white">Company</h4>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> About
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Careers
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Blog
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Press
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Gift Cards
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Magazine
               </a>
             </div>
@@ -76,22 +76,22 @@ const Footer: React.FC = () => {
           <div className="col-md-6 col-lg-6 col-xl-3">
             <div className="footer-item d-flex flex-column">
               <h4 className="mb-4 text-white">Support</h4>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Contact
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Legal Notice
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Privacy Policy
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Terms and Conditions
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Sitemap
               </a>
-              <a href="">
+              <a href="" className="text-decoration-none">
                 <i className="fas fa-angle-right me-2"></i> Cookie policy
               </a>
             </div>
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
                   <form>
                     <div className="form-floating">
                       <select
-                        className="form-select bg-dark border"
+                        className="form-select bg-dark border text-secondary"
                         id="select1"
                       >
                         <option value="1">Arabic</option>
@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
                   <form>
                     <div className="form-floating">
                       <select
-                        className="form-select bg-dark border"
+                        className="form-select bg-dark border text-secondary"
                         id="select1"
                       >
                         <option value="1">USD</option>
