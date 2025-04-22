@@ -1,9 +1,6 @@
-import  { useState } from "react";
 import DestinationOverlay from "./DestinationOverlay";
 
 const Destination = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="container-fluid destination py-5">
       <div className="container py-5">

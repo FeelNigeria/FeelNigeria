@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/NavBar";
 import TopBar from "./components/TopBar";
 import { Routes, Route } from "react-router-dom";
-import BookingPage from "./components/Booking";
 import Footer from "./components/Footer";
 import Copyright from "./components/Copyright";
 import BackToTop from "./components/BackToTop";

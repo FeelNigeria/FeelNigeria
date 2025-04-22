@@ -1,5 +1,3 @@
-import React from "react";
-
 const Copyright = () => {
   return (
     <div className="container-fluid copyright text-body py-4 bg-dark">
