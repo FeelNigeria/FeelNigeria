@@ -12,7 +12,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="src/assets/img/guide-1.jpg"
+                    src="src/assets/img/tour-guide-1.jpg"
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>
@@ -57,7 +57,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="src/assets/img/guide-2.jpg"
+                    src="src/assets/img/tour-guide-2.png"
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>
@@ -102,7 +102,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="src/assets/img/guide-3.jpg"
+                    src="src/assets/img/tour-guide-3.png"
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>
@@ -136,7 +136,7 @@ const TravelGuide = () => {
               </div>
               <div className="guide-title text-center rounded-bottom p-4">
                 <div className="guide-title-inner">
-                  <h4 className="mt-3">Michael Akintola</h4>
+                  <h4 className="mt-3">Zara Okoye</h4>
                   <p className="mb-0">Tourist Guide</p>
                 </div>
               </div>
@@ -147,7 +147,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="src/assets/img/guide-4.jpg"
+                    src="src/assets/img/tour-guide-4.png"
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>
@@ -181,7 +181,7 @@ const TravelGuide = () => {
               </div>
               <div className="guide-title text-center rounded-bottom p-4">
                 <div className="guide-title-inner">
-                  <h4 className="mt-3">John Akintola</h4>
+                  <h4 className="mt-3">Amara Ndlovu</h4>
                   <p className="mb-0">Tourist Guide</p>
                 </div>
               </div>
