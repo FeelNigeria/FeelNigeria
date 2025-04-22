@@ -14,6 +14,7 @@ import Gallery from "./components/Gallery";
 import TourBooking from "./components/TourBooking";
 import TravelGuide from "./components/TravelGuide";
 import Blog from "./components/Blog";
+import Testimonials from "./components/Testimonials";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -84,6 +85,7 @@ const App: React.FC = () => {
       <TourBooking />
       <TravelGuide />
       <Blog />
+      <Testimonials />
       <Routes>
         <Route path="/booking" element={<BookingPage />} />
       </Routes>

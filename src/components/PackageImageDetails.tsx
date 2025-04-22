@@ -3,7 +3,6 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import PackageContent from "./PackageContent";
 import PackageImageItem from "./PackageImageItem";
-import { useEffect, useRef } from "react";
 
 interface imageItemDetail {
   src: string;
