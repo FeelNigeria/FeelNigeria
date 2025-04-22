@@ -17,10 +17,10 @@ import { Provider } from "./components/ui/provider";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import "../src/index.css";
-// import "lightbox2/dist/css/lightbox.min.css";
-// import "lightbox2/dist/js/lightbox-plus-jquery.min.js";
-import "../lib/lightbox/css/lightbox.min.css";
-// import '@fortawesome/fontawesome-free/css/all.min.css';
+import "lightbox2/dist/css/lightbox.min.css";
+import "lightbox2/dist/js/lightbox-plus-jquery.min.js";
+import "../src/lib/lightbox/css/lightbox.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
