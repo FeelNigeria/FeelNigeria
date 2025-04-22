@@ -11,10 +11,7 @@ const ServicesSection: React.FC = () => {
           <h5 className="section-title px-3 text-success">Services</h5>
           <h1 className="mb-0">Our Services</h1>
         </div>
-        <div
-          className="mx-auto text-center mb-5"
-          style={{ maxWidth: "900px;" }}
-        >
+        <div className="mx-auto text-center mb-5" style={{ maxWidth: "900px" }}>
           <p className="mb-4">
             At Feel Nigeria, we are dedicated to providing exceptional travel
             services tailored to ensure your journey through Nigeria is

@@ -9,6 +9,8 @@ import ServicesSection from "./components/ServiceSection";
 import Destination from "./components/Destination";
 import Subscribe from "./components/Subscribe";
 import Explore from "./components/Explore";
+import Package from "./components/Package";
+import PackageImageItem from "./components/PackageImageItem";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -59,6 +61,18 @@ const heroSlides = [
 ];
 
 const App: React.FC = () => {
+  const item = {
+    src: "img/packages-2.jpg",
+    description: "Adventure Package",
+    duration: 3,
+    people: 2,
+    price: "449.00",
+    title: "Adventure Package",
+    subtitle: "Hotel Deals",
+    rating: 5,
+    fullDescription: `Embark on an exhilarating journey filled with outdoor activities private guided tours, and personalized services designed for an indulgent escape.`,
+  };
+
   const [selectedNavLink, setSelectedNavLink] = useState("Home");
   return (
     <>
@@ -74,6 +88,7 @@ const App: React.FC = () => {
       <Destination />
       <Subscribe />
       <Explore />
+      <Package />
       <Routes>
         <Route path="/booking" element={<BookingPage />} />
       </Routes>

@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .centered-caption {
   position: absolute;
   top: 0;

@@ -1,6 +1,5 @@
 import { Image } from "@chakra-ui/react";
 import React from "react";
-import Navbar, { NavLink } from "./NavBar";
 
 interface Slide {
   image: string;
