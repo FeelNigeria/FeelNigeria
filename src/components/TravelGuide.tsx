@@ -1,3 +1,8 @@
+import guideImg1 from "../assets/img/tour-guide-1.jpg";
+import guideImg2 from "../assets/img/tour-guide-2.png";
+import guideImg3 from "../assets/img/tour-guide-3.png";
+import guideImg4 from "../assets/img/tour-guide-4.png";
+
 const TravelGuide = () => {
   return (
     <div className="container-fluid guide py-5">
@@ -12,7 +17,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="src/assets/img/tour-guide-1.jpg"
+                    src={guideImg1}
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>
@@ -57,7 +62,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="src/assets/img/tour-guide-2.png"
+                    src={guideImg2}
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>
@@ -102,7 +107,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="src/assets/img/tour-guide-3.png"
+                    src={guideImg3}
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>
@@ -147,7 +152,7 @@ const TravelGuide = () => {
               <div className="guide-img">
                 <div className="guide-img-efects">
                   <img
-                    src="src/assets/img/tour-guide-4.png"
+                    src={guideImg4}
                     className="img-fluid w-100 rounded-top"
                     alt="Image"
                   ></img>

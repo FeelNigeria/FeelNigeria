@@ -3,6 +3,10 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import PackageContent from "./PackageContent";
 import PackageImageItem from "./PackageImageItem";
+import packageImg1 from "../assets/img/packages-1.jpg";
+import packageImg2 from "../assets/img/packages-2.jpg";
+import packageImg3 from "../assets/img/packages-3.jpg";
+import packageImg4 from "../assets/img/packages-4.jpg";
 
 interface imageItemDetail {
   src: string;
@@ -18,7 +22,7 @@ interface imageItemDetail {
 
 const imageItemDetails: imageItemDetail[] = [
   {
-    src: "src/assets/img/packages-4.jpg",
+    src: packageImg4,
     description: "Cultural Heritage Package",
     duration: 3,
     people: 2,
@@ -33,7 +37,7 @@ const imageItemDetails: imageItemDetail[] = [
               `,
   },
   {
-    src: "src/assets/img/packages-2.jpg",
+    src: packageImg2,
     description: "Adventure Package",
     duration: 3,
     people: 2,
@@ -44,7 +48,7 @@ const imageItemDetails: imageItemDetail[] = [
     fullDescription: `Embark on an exhilarating journey filled with outdoor activities private guided tours, and personalized services designed for an indulgent escape.`,
   },
   {
-    src: "src/assets/img/packages-3.jpg",
+    src: packageImg3,
     description: "Food and Wine Package",
     duration: 3,
     people: 2,
@@ -57,7 +61,7 @@ const imageItemDetails: imageItemDetail[] = [
     rating: 5,
   },
   {
-    src: "src/assets/img/packages-3.jpg",
+    src: packageImg3,
     description: "Luxury Retreat Package",
     duration: 3,
     people: 2,
@@ -70,7 +74,7 @@ const imageItemDetails: imageItemDetail[] = [
     rating: 5,
   },
   {
-    src: "src/assets/img/packages-3.jpg",
+    src: packageImg3,
     description: "Wildlife & Nature Package",
     duration: 3,
     people: 2,
@@ -82,7 +86,7 @@ const imageItemDetails: imageItemDetail[] = [
     rating: 5,
   },
   {
-    src: "src/assets/img/packages-1.jpg",
+    src: packageImg1,
     description: "Romance Package",
     duration: 3,
     people: 2,

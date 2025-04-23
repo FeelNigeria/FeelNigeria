@@ -1,3 +1,7 @@
+import carouselImg1 from "../assets/img/carousel-1.jpg";
+import carouselImg2 from "../assets/img/carousel-2.jpg";
+import carouselImg3 from "../assets/img/carousel-3.jpg";
+
 const NavBarHeroCarousel = () => {
   return (
     <div className="container-fluid position-relative p-0">
@@ -88,11 +92,7 @@ const NavBarHeroCarousel = () => {
           </ol>
           <div className="carousel-inner" role="listbox">
             <div className="carousel-item active">
-              <img
-                src="src/assets/img/carousel-2.jpg"
-                className="img-fluid"
-                alt="Image"
-              ></img>
+              <img src={carouselImg2} className="img-fluid" alt="Image"></img>
               <div className="carousel-caption">
                 <div className="p-3" style={{ maxWidth: "900px" }}>
                   <h4
@@ -119,11 +119,7 @@ const NavBarHeroCarousel = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img
-                src="src/assets/img/carousel-1.jpg"
-                className="img-fluid"
-                alt="Image"
-              ></img>
+              <img src={carouselImg1} className="img-fluid" alt="Image"></img>
               <div className="carousel-caption">
                 <div className="p-3" style={{ maxWidth: "900px" }}>
                   <h4
@@ -151,11 +147,7 @@ const NavBarHeroCarousel = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img
-                src="src/assets/img/carousel-3.jpg"
-                className="img-fluid"
-                alt="Image"
-              ></img>
+              <img src={carouselImg3} className="img-fluid" alt="Image"></img>
               <div className="carousel-caption">
                 <div className="p-3" style={{ maxWidth: "900px" }}>
                   <h4

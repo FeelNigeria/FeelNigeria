@@ -1,6 +1,10 @@
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import testimonialImg1 from "../assets/img/testimonial-1.jpg";
+import testimonialImg2 from "../assets/img/testimonial-2.jpg";
+import testimonialImg3 from "../assets/img/testimonial-3.jpg";
+import testimonialImg4 from "../assets/img/testimonial-4.jpg";
 
 const Testimonials = () => {
   const options = {
@@ -57,7 +61,7 @@ const Testimonials = () => {
               </div>
               <div className="testimonial-img p-1">
                 <img
-                  src="src/assets/img/testimonial-1.jpg"
+                  src={testimonialImg1}
                   className="img-fluid rounded-circle"
                   alt="Image"
                 ></img>
@@ -86,7 +90,7 @@ const Testimonials = () => {
               </div>
               <div className="testimonial-img p-1">
                 <img
-                  src="src/assets/img/testimonial-2.jpg"
+                  src={testimonialImg2}
                   className="img-fluid rounded-circle"
                   alt="Image"
                 ></img>
@@ -115,7 +119,7 @@ const Testimonials = () => {
               </div>
               <div className="testimonial-img p-1">
                 <img
-                  src="src/assets/img/testimonial-3.jpg"
+                  src={testimonialImg3}
                   className="img-fluid rounded-circle"
                   alt="Image"
                 ></img>
@@ -145,7 +149,7 @@ const Testimonials = () => {
               </div>
               <div className="testimonial-img p-1">
                 <img
-                  src="src/assets/img/testimonial-4.jpg"
+                  src={testimonialImg4}
                   className="img-fluid rounded-circle"
                   alt="Image"
                 ></img>
