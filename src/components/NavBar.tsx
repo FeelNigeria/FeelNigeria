@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 interface DropdownLink {
   title: string;
   href: string;
@@ -41,11 +40,7 @@ const Navbar: React.FC<Props> = ({
   }, []);
 
   return (
-    <div
-      className={`container-fluid p-0 ${
-        isSticky ? "fixed-top shadow" : "position-absolute"
-      }`}
-    >
+    <div className={`container-fluid p-0`}>
       <nav
         className={`navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-4 py-lg-1 ${
           isSticky ? "bg-light" : ""
@@ -82,9 +77,7 @@ const Navbar: React.FC<Props> = ({
                 >
                   <a
                     href="#"
-                    className={`nav-link dropdown-toggle ${
-                      isSticky ? "" : "text-white"
-                    }`}
+                    className={`nav-link dropdown-toggle text-white`}
                     data-bs-toggle="dropdown"
                   >
                     {link.title}

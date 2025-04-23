@@ -38,6 +38,7 @@ const navLinks = [
 const App: React.FC = () => {
   const [selectedNavLink, setSelectedNavLink] = useState("Home");
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,9 +48,18 @@ const App: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768);
+    };
+    handleResize(); // Check on initial render
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
-      <TopBar />
+      {!isMobileView && <TopBar />}
       <Navbar
         onSelectNavLink={(title) => setSelectedNavLink(title)}
         selectedNavLink={selectedNavLink}
