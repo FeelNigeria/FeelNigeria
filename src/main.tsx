@@ -21,6 +21,8 @@ import "lightbox2/dist/css/lightbox.min.css";
 import "lightbox2/dist/js/lightbox-plus-jquery.min.js";
 import "../src/lib/lightbox/css/lightbox.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import "../css/style.css";
+
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
