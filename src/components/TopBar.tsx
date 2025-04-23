@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TopBar = () => {
   return (
     <div className="bg-success text-white py-2 px-4 d-flex justify-content-between align-items-center">
@@ -19,9 +21,9 @@ const TopBar = () => {
         </a>
       </div>
       <div className="d-flex gap-3">
-        <a href="#" className="nav-link text-light">
+        <Link to="/registration" className="nav-link text-light">
           <i className="fas fa-user me-2"></i> Register
-        </a>
+        </Link>
         <a href="#" className="nav-link text-light">
           <i className="fa fa-sign-in-alt me-2"></i> Login
         </a>

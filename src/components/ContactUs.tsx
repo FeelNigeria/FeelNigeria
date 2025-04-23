@@ -3,7 +3,7 @@ import Header from "./Header";
 const ContactUs = () => {
   return (
     <>
-      <Header />
+      <Header child="Contact Us" />
       <div className="container-fluid contact bg-light py-5">
         <div className="container py-5">
           <div

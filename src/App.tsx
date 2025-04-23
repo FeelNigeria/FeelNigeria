@@ -12,6 +12,7 @@ import Blog from "./components/Blog";
 import Package from "./components/Package";
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
+import RegistrationForm from "./components/RegistrationForm";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -62,6 +63,7 @@ const App: React.FC = () => {
         <Route path="/packages" element={<Package standAlone={true} />} />
         <Route path="/blog" element={<Blog standAlone={true} />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/registration" element={<RegistrationForm />} />
       </Routes>
       <Subscribe />
       <Footer />
