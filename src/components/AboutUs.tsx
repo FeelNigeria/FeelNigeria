@@ -1,4 +1,6 @@
 import React from "react";
+import aboutImg from "../assets/img/about-img.jpg";
+import aboutImg1 from "../assets/img/about-img-1.png";
 
 const AboutUs: React.FC = () => {
   return (
@@ -14,7 +16,7 @@ const AboutUs: React.FC = () => {
               }}
             >
               <img
-                src="src/assets/img/about-img.jpg"
+                src={aboutImg}
                 className="img-fluid w-100 h-100"
                 alt="About"
               />
@@ -23,7 +25,7 @@ const AboutUs: React.FC = () => {
           <div
             className="col-lg-7"
             style={{
-              background: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(src/assets/img/about-img-1.png)`,
+              background: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(${aboutImg1})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
             }}

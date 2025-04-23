@@ -1,4 +1,7 @@
 import Header from "./Header";
+import blogImg1 from "../assets/img/blog-1.jpg";
+import blogImg2 from "../assets/img/blog-2.jpg";
+import blogImg3 from "../assets/img/blog-3.jpg";
 
 interface Props {
   standAlone?: Boolean;
@@ -32,7 +35,7 @@ const Blog = ({ standAlone }: Props) => {
                   <div className="blog-img-inner">
                     <img
                       className="img-fluid w-100 rounded-top"
-                      src="src/assets/img/blog-1.jpg"
+                      src={blogImg1}
                       alt="Image"
                     ></img>
                     <div className="blog-icon">
@@ -86,7 +89,7 @@ const Blog = ({ standAlone }: Props) => {
                   <div className="blog-img-inner">
                     <img
                       className="img-fluid w-100 rounded-top"
-                      src="src/assets/img/blog-2.jpg"
+                      src={blogImg2}
                       alt="Image"
                     ></img>
                     <div className="blog-icon">
@@ -140,7 +143,7 @@ const Blog = ({ standAlone }: Props) => {
                   <div className="blog-img-inner">
                     <img
                       className="img-fluid w-100 rounded-top"
-                      src="src/assets/img/blog-3.jpg"
+                      src={blogImg3}
                       alt="Image"
                     ></img>
                     <div className="blog-icon">
