@@ -1,3 +1,10 @@
+import exploreTour1 from "../assets/img/explore-tour-1.jpg";
+import exploreTour2 from "../assets/img/explore-tour-2.jpg";
+import exploreTour3 from "../assets/img/explore-tour-3.jpg";
+import exploreTour4 from "../assets/img/explore-tour-4.jpg";
+import exploreTour5 from "../assets/img/explore-tour-5.jpg";
+import exploreTour6 from "../assets/img/explore-tour-6.jpg";
+
 const Explore = () => {
   return (
     <div className="container-fluid ExploreTour py-5">
@@ -45,7 +52,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="src/assets/img/explore-tour-1.jpg"
+                      src={exploreTour1}
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -70,7 +77,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="src/assets/img/explore-tour-2.jpg"
+                      src={exploreTour2}
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -95,7 +102,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="src/assets/img/explore-tour-3.jpg"
+                      src={exploreTour3}
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -121,7 +128,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="src/assets/img/explore-tour-4.jpg"
+                      src={exploreTour4}
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -146,7 +153,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="src/assets/img/explore-tour-5.jpg"
+                      src={exploreTour5}
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -172,7 +179,7 @@ const Explore = () => {
                 <div className="col-md-6 col-lg-4">
                   <div className="national-item">
                     <img
-                      src="src/assets/img/explore-tour-6.jpg"
+                      src={exploreTour6}
                       className="img-fluid w-100 rounded"
                       alt="Image"
                     ></img>
@@ -200,7 +207,7 @@ const Explore = () => {
               <div className="InternationalTour-carousel owl-carousel">
                 <div className="international-item">
                   <img
-                    src="src/assets/img/explore-tour-1.jpg"
+                    src={exploreTour1}
                     className="img-fluid w-100 rounded"
                     alt="Image"
                   ></img>
@@ -227,7 +234,7 @@ const Explore = () => {
                 </div>
                 <div className="international-item">
                   <img
-                    src="src/assets/img/explore-tour-2.jpg"
+                    src={exploreTour2}
                     className="img-fluid w-100 rounded"
                     alt="Image"
                   ></img>
@@ -253,7 +260,7 @@ const Explore = () => {
                 </div>
                 <div className="international-item">
                   <img
-                    src="src/assets/img/explore-tour-3.jpg"
+                    src={exploreTour3}
                     className="img-fluid w-100 rounded"
                     alt="Image"
                   ></img>
@@ -278,7 +285,7 @@ const Explore = () => {
                 </div>
                 <div className="international-item">
                   <img
-                    src="src/assets/img/explore-tour-4.jpg"
+                    src={exploreTour4}
                     className="img-fluid w-100 rounded"
                     alt="Image"
                   ></img>
@@ -302,7 +309,7 @@ const Explore = () => {
                 </div>
                 <div className="international-item">
                   <img
-                    src="src/assets/img/explore-tour-5.jpg"
+                    src={exploreTour5}
                     className="img-fluid w-100 rounded"
                     alt="Image"
                   ></img>

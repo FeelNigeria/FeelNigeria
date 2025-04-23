@@ -1,5 +1,7 @@
 import GalleryOverlay from "./GalleryOverlay";
 import GalleryTab from "./GalleryTab";
+import galleryImg2 from "../assets/img/gallery-2.jpg";
+import galleryImg3 from "../assets/img/gallery-3.jpg";
 
 const GalleryTabDetails = [
   {
@@ -132,14 +134,14 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="src/assets/img/gallery-2.jpg"
+                    src={galleryImg2}
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
                   <GalleryOverlay />
                   <div className="gallery-plus-icon">
                     <a
-                      href="src/assets/img/gallery-2.jpg"
+                      href={galleryImg2}
                       data-lightbox="gallery-2"
                       className="my-auto"
                     >
@@ -151,14 +153,14 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="src/assets/img/gallery-3.jpg"
+                    src={galleryImg3}
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
                   <GalleryOverlay />
                   <div className="gallery-plus-icon">
                     <a
-                      href="src/assets/img/gallery-3.jpg"
+                      href={galleryImg3}
                       data-lightbox="gallery-3"
                       className="my-auto"
                     >
@@ -174,14 +176,14 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="src/assets/img/gallery-2.jpg"
+                    src={galleryImg2}
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
                   <GalleryOverlay />
                   <div className="gallery-plus-icon">
                     <a
-                      href="src/assets/img/gallery-2.jpg"
+                      href={galleryImg2}
                       data-lightbox="gallery-2"
                       className="my-auto"
                     >
@@ -193,14 +195,14 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="src/assets/img/gallery-3.jpg"
+                    src={galleryImg3}
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
                   <GalleryOverlay />
                   <div className="gallery-plus-icon">
                     <a
-                      href="src/assets/img/gallery-3.jpg"
+                      href={galleryImg3}
                       data-lightbox="gallery-3"
                       className="my-auto"
                     >
@@ -216,14 +218,14 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="src/assets/img/gallery-2.jpg"
+                    src={galleryImg2}
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
                   <GalleryOverlay />
                   <div className="gallery-plus-icon">
                     <a
-                      href="src/assets/img/gallery-2.jpg"
+                      href={galleryImg2}
                       data-lightbox="gallery-2"
                       className="my-auto"
                     >
@@ -235,14 +237,14 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="src/assets/img/gallery-3.jpg"
+                    src={galleryImg3}
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
                   <GalleryOverlay />
                   <div className="gallery-plus-icon">
                     <a
-                      href="src/assets/img/gallery-3.jpg"
+                      href={galleryImg3}
                       data-lightbox="gallery-3"
                       className="my-auto"
                     >
@@ -258,14 +260,14 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="gallery-item h-100">
                   <img
-                    src="src/assets/img/gallery-2.jpg"
+                    src={galleryImg2}
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
                   <GalleryOverlay />
                   <div className="gallery-plus-icon">
                     <a
-                      href="src/assets/img/gallery-2.jpg"
+                      href={galleryImg2}
                       data-lightbox="gallery-2"
                       className="my-auto"
                     >
@@ -277,14 +279,14 @@ const Gallery = () => {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                 <div className="gallery-item h-100">
                   <img
-                    src="src/assets/img/gallery-3.jpg"
+                    src={galleryImg3}
                     className="img-fluid w-100 h-100 rounded"
                     alt="Image"
                   ></img>
                   <GalleryOverlay />
                   <div className="gallery-plus-icon">
                     <a
-                      href="src/assets/img/gallery-3.jpg"
+                      href={galleryImg3}
                       data-lightbox="gallery-3"
                       className="my-auto"
                     >
