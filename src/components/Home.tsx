@@ -10,10 +10,13 @@ import Subscribe from "./Subscribe";
 import Testimonials from "./Testimonials";
 import TourBooking from "./TourBooking";
 import TravelGuide from "./TravelGuide";
+import slideOneImage from "../assets/img/carousel-1.jpg";
+import slideTwoImage from "../assets/img/carousel-2.jpg";
+import slideThreeImage from "../assets/img/carousel-3.jpg";
 
 const heroSlides = [
   {
-    image: "src/assets/img/carousel-1.jpg",
+    image: slideOneImage,
     alt: "Slide 1",
     subheading: "Feel Nigeria",
     heading: "Let's tour Nigeria Together!",
@@ -21,7 +24,7 @@ const heroSlides = [
     buttonText: "Discover Now",
   },
   {
-    image: "src/assets/img/carousel-1.jpg",
+    image: slideTwoImage,
     alt: "Slide 2",
     subheading: "Feel Nigeria",
     heading: "Find Your Perfect Tour At Travel",
@@ -29,7 +32,7 @@ const heroSlides = [
     buttonText: "Discover Now",
   },
   {
-    image: "src/assets/img/carousel-3.jpg",
+    image: slideThreeImage,
     alt: "Slide 3",
     subheading: "Feel Nigeria",
     heading: "You Like To Go?",

@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const TourBooking = () => {
   return (
     <div className="container-fluid booking py-5">
@@ -16,12 +18,7 @@ const TourBooking = () => {
               Please make use of the Online Booking Portal to complete your
               booking details.
             </p>
-            <a
-              href="#"
-              className="btn btn-light text-success rounded-pill py-3 px-5 mt-2"
-            >
-              Read More
-            </a>
+            <Button href="#" child="Read More" />
           </div>
           <div className="col-lg-6">
             <h1 className="text-white mb-3">Book A Tour Deals</h1>
