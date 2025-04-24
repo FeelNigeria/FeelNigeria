@@ -64,6 +64,7 @@ const App: React.FC = () => {
         onSelectNavLink={(title) => setSelectedNavLink(title)}
         selectedNavLink={selectedNavLink}
         navLinks={navLinks}
+        isMobileView={isMobileView}
       />
       <Routes>
         <Route path="/" element={<Home />} />
