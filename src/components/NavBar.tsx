@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
+
 interface DropdownLink {
   title: string;
   href: string;
@@ -117,13 +118,13 @@ const Navbar: React.FC<Props> = ({
               )
             )}
           </div>
-          <a href="contact.html" className="nav-item nav-link">
-            Contact
-          </a>
+          <Link
+            to={"/booking"}
+            className="btn btn-success rounded-pill py-2 px-4 ms-lg-4"
+          >
+            Book Now
+          </Link>
         </div>
-        <a href="" className="btn btn-success rounded-pill py-2 px-4 ms-lg-4">
-          Book Now
-        </a>
       </nav>
     </div>
   );
