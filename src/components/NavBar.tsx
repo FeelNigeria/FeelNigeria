@@ -1,6 +1,8 @@
+import { HStack, Image } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/img/logo.png";
 
 interface DropdownLink {
   title: string;
@@ -59,10 +61,12 @@ const Navbar: React.FC<Props> = ({
             isSticky ? "text-success" : "text-white"
           }`}
         >
-          <h1 className="m-0">
-            <i className="fa fa-map-marker-alt me-3"></i>
-            {brand}
-          </h1>
+          <HStack>
+            <Image src={logo} boxSize={"60px"} borderRadius={10} />
+            <h1 className="m-0">
+              {brand}
+            </h1>
+          </HStack>
         </Link>
         <button
           className="navbar-toggler"
