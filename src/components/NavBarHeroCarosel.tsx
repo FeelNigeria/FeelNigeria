@@ -129,7 +129,7 @@ const NavBarHeroCarousel = () => {
                     Feel Nigeria
                   </h4>
                   <h1 className="display-2 text-capitalize text-white mb-4">
-                    Find Your Perfect Tour At Travel
+                    Find Your Perfect Travel Guide
                   </h1>
                   <p className="mb-5 fs-5">
                     We make you feel @ home while enjoying your holiday in

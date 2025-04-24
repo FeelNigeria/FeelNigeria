@@ -27,7 +27,7 @@ const heroSlides = [
     image: slideTwoImage,
     alt: "Slide 2",
     subheading: "Feel Nigeria",
-    heading: "Find Your Perfect Tour At Travel",
+    heading: "Find Your Perfect Travel Guide",
     text: "We make you feel @ home while enjoying your holiday in Nigeria",
     buttonText: "Discover Now",
   },
