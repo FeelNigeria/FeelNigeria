@@ -30,6 +30,7 @@ const Navbar: React.FC<Props> = ({
   isMobileView = false,
 }: Props) => {
   const [isSticky, setIsSticky] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,16 +69,22 @@ const Navbar: React.FC<Props> = ({
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse"
+          onClick={() => {
+            setIsCollapsed(!isCollapsed);
+          }}
         >
           <span className="fa fa-bars"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
+        <div
+          className={`collapse navbar-collapse ${!isCollapsed ? "show" : ""}`}
+          id="navbarCollapse"
+        >
           <div className={`navbar-nav ms-auto py-0`}>
             {navLinks.map((link) =>
               link.dropdown ? (
                 <div
                   className={`nav-item dropdown ${
-                    isSticky ? "text-white" : "text-green"
+                    isSticky ? "text-white" : "text-success"
                   }`}
                   key={link.title}
                 >
@@ -111,7 +118,10 @@ const Navbar: React.FC<Props> = ({
                     link.title == selectedNavLink ? "bg-success text-white" : ""
                   }`}
                   key={link.title}
-                  onClick={() => onSelectNavLink(link.title)}
+                  onClick={() => {
+                    onSelectNavLink(link.title);
+                    setIsCollapsed(!isCollapsed);
+                  }}
                 >
                   {link.title}
                 </Link>

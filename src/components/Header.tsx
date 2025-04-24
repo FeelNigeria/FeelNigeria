@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface Props {
   child?: string;
 }
 
-const Header: React.FC<Props> = ({child}) => {
+const Header: React.FC<Props> = ({ child }) => {
   return (
     <div className="container-fluid bg-breadcrumb">
       <div
@@ -12,14 +13,16 @@ const Header: React.FC<Props> = ({child}) => {
         style={{ maxWidth: "900px;" }}
       >
         <h3 className="text-white display-3 mb-4">{child || "Our Services"}</h3>
-        <ol className="breadcrumb justify-content-center mb-0">
-          <li className="breadcrumb-item">
-            <a href="index.html">Home</a>
+        <ol className="breadcrumb justify-content-center mb-0 text-decoration-none">
+          <li className="breadcrumb-item text-decoration-none">
+            <Link to="/">Home</Link>
           </li>
-          <li className="breadcrumb-item">
-            <a href="#">Pages</a>
+          <li className="breadcrumb-item text-decoration-none">
+            <Link to="/pages">Pages</Link>
           </li>
-          <li className="breadcrumb-item active text-white">Services</li>
+          <Link to="/services" className="breadcrumb-item active text-white">
+            Services
+          </Link>
         </ol>
       </div>
     </div>
