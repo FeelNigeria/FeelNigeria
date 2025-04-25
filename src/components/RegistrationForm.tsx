@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, Field, Input, Stack, InputGroup } from "@chakra-ui/react";
+import { Box, Button, Field, Input, Stack, InputGroup, HStack } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import Header from "./Header";
 import { LuUser, LuMail, LuPhone, LuFlag, LuPlane, LuCalendar } from "react-icons/lu";
@@ -47,16 +47,6 @@ const Demo = () => {
       required: true,
       icon: LuFlag,
     },
-    {
-      name: "preferredDestination",
-      required: true,
-      icon: LuPlane,
-    },
-    {
-      name: "travelDate",
-      required: true,
-      icon: LuCalendar,
-    },
   ];
 
   return (
@@ -84,21 +74,34 @@ const Demo = () => {
               </Field.ErrorText>
             </Field.Root>
           ))}
-
-          <Field.Root
-              required
-              invalid={!!errors.travelDate}
-            >
-              <Field.Label>
-                Travel Date <Field.RequiredIndicator />
-              </Field.Label>
-              <InputGroup startElement={<LuPlane />}>
-                <Input {...register(field.name as keyof FormValues)} />
-              </InputGroup>
-              <Field.ErrorText>
-                {errors[field.name as keyof FormValues]?.message}
-              </Field.ErrorText>
-            </Field.Root>
+          <HStack w={"100%"}>
+            <Field.Root required
+                invalid={!!errors.travelDate}
+              >
+                <Field.Label>
+                  Preferred Destination<Field.RequiredIndicator />
+                </Field.Label>
+                <InputGroup startElement={<LuPlane />}>
+                  <Input {...register("preferredDestination")} />
+                </InputGroup>
+                <Field.ErrorText>
+                  {errors.preferredDestination?.message}
+                </Field.ErrorText>
+              </Field.Root>
+              <Field.Root required
+                invalid={!!errors.travelDate}
+              >
+                <Field.Label>
+                  Travel Date <Field.RequiredIndicator />
+                </Field.Label>
+                <InputGroup startElement={<LuCalendar />}>
+                  <Input type="date" {...register("travelDate")} />
+                </InputGroup>
+                <Field.ErrorText>
+                  {errors.travelDate?.message}
+                </Field.ErrorText>
+              </Field.Root>
+          </HStack>
 
           <Button type="submit" backgroundColor="green.700" borderRadius={3}>
             Submit

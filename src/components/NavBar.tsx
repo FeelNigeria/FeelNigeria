@@ -2,7 +2,7 @@ import { HStack, Image } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/img/logo.png";
+import logo from "../assets/img/logo.PNG";
 
 interface DropdownLink {
   title: string;
