@@ -74,7 +74,7 @@ const Demo = () => {
               </Field.ErrorText>
             </Field.Root>
           ))}
-          <HStack w={"100%"}>
+          <HStack w={"100%"} align={"flex-end"}>
             <Field.Root required
                 invalid={!!errors.travelDate}
               >
