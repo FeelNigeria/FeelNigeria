@@ -103,7 +103,7 @@ const Demo = () => {
               </Field.Root>
           </HStack>
 
-          <Button type="submit" backgroundColor="green.700" borderRadius={3}>
+          <Button type="submit" className="text-white" backgroundColor="green.700" borderRadius={3}>
             Submit
           </Button>
         </Stack>
