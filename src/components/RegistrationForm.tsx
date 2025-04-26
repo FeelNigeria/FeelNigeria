@@ -1,41 +1,77 @@
 "use client";
 
-import { Box, Button, Field, Input, Stack, InputGroup, HStack } from "@chakra-ui/react";
+import { Box, Button, Stack, HStack } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import Header from "./Header";
-import { LuUser, LuMail, LuPhone, LuFlag, LuPlane, LuCalendar } from "react-icons/lu";
+import {
+  LuUser,
+  LuMail,
+  LuPhone,
+  LuFlag,
+  LuPlane,
+  LuCalendar,
+  LuLock
+} from "react-icons/lu";
+import axios from "axios";
+import RegistrationFormField, { FormValues } from "./RegistrationFormField";
 
-interface FormValues {
-  fullName: string;
-  username: string;
-  email: string;
-  phoneNumber: string;
-  nationality: string;
-  password: string;
-  confirmPassword: string;
-  preferredDestination: string;
-  travelDate: string;
-}
+const RegistrationForm = () => {
+  const { handleSubmit } = useForm<FormValues>();
 
-const Demo = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormValues>();
+  const onSubmit = handleSubmit(async (data) => {
+    const payload = {
+      name: data.fullName,
+      phone_number: data.phoneNumber,
+      email: data.email,
+      nationality: data.nationality,
+      preferred_destination: data.preferredDestination,
+      password: data.password,
+      travel_date: data.travelDate,
+      username: data.username,
+    };
 
-  const onSubmit = handleSubmit((data) => console.log(data));
+    try {
+      const response = await axios.post(
+        "http://localhost:8000/api/v1/store/customers/",
+        payload,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (response.status < 200 || response.status >= 300) {
+        throw new Error("Failed to submit form");
+      }
+
+      console.log("Form submitted successfully:", response.data);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  });
 
   const fields = [
     {
       name: "fullName",
       required: true,
       icon: LuUser,
+      type: "text",
     },
     {
-      name: "email",
-      required: true,
-      icon: LuMail,
+      hStack: [
+        {
+          name: "email",
+          required: true,
+          icon: LuMail,
+          type: "email",
+        },
+        {
+          name: "username",
+          required: true,
+          icon: LuUser,
+        },
+      ],
     },
     {
       name: "phoneNumber",
@@ -47,6 +83,37 @@ const Demo = () => {
       required: true,
       icon: LuFlag,
     },
+    {
+      hStack: [
+        {
+          name: "preferredDestination",
+          required: true,
+          icon: LuPlane,
+        },
+        {
+          name: "travelDate",
+          required: true,
+          icon: LuCalendar,
+          type: "date",
+        },
+      ],
+    },
+    {
+      hStack: [
+        {
+          name: "password",
+          required: true,
+          icon: LuLock,
+          type: "password",
+        },
+        {
+          name: "confirmPassword",
+          required: true,
+          icon: LuLock,
+          type: "password",
+        },
+      ],
+    },
   ];
 
   return (
@@ -54,56 +121,50 @@ const Demo = () => {
       <Header child="Register with Us" />
       <form className="m-5" onSubmit={onSubmit}>
         <Stack gap="4" align="flex-start">
-          {fields.map((field) => (
-            <Field.Root
-              key={field.name}
-              required={field.required}
-              invalid={!!errors[field.name as keyof FormValues]}
-            >
-              <Field.Label>
-                {field.name
-                  .replace(/([A-Z])/g, " $1")
-                  .replace(/^./, (str) => str.toUpperCase())}{" "}
-                {field.required && <Field.RequiredIndicator />}
-              </Field.Label>
-              <InputGroup startElement={<field.icon />}>
-                <Input {...register(field.name as keyof FormValues)} />
-              </InputGroup>
-              <Field.ErrorText>
-                {errors[field.name as keyof FormValues]?.message}
-              </Field.ErrorText>
-            </Field.Root>
-          ))}
-          <HStack w={"100%"} align={"flex-end"}>
-            <Field.Root required
-                invalid={!!errors.travelDate}
-              >
-                <Field.Label>
-                  Preferred Destination<Field.RequiredIndicator />
-                </Field.Label>
-                <InputGroup startElement={<LuPlane />}>
-                  <Input {...register("preferredDestination")} />
-                </InputGroup>
-                <Field.ErrorText>
-                  {errors.preferredDestination?.message}
-                </Field.ErrorText>
-              </Field.Root>
-              <Field.Root required
-                invalid={!!errors.travelDate}
-              >
-                <Field.Label>
-                  Travel Date <Field.RequiredIndicator />
-                </Field.Label>
-                <InputGroup startElement={<LuCalendar />}>
-                  <Input type="date" {...register("travelDate")} />
-                </InputGroup>
-                <Field.ErrorText>
-                  {errors.travelDate?.message}
-                </Field.ErrorText>
-              </Field.Root>
-          </HStack>
-
-          <Button type="submit" className="text-white" backgroundColor="green.700" borderRadius={3}>
+          {fields.map((field) => {
+            if (field.name) {
+              return (
+                <RegistrationFormField
+                  key={field.name}
+                  label={field.name
+                    .replace(/([A-Z])/g, " $1")
+                    .replace(/^./, (str) => str.toUpperCase())}
+                  startElement={<field.icon />}
+                  fieldName={field.name as keyof FormValues}
+                  required={field.required}
+                  fieldType={field?.type}
+                />
+              );
+            } else if (field.hStack) {
+              return (
+                <HStack
+                  w={"100%"}
+                  align={"flex-end"}
+                  flexDirection="row"
+                  key={field.hStack[0].name}
+                >
+                  {field.hStack.map((hField) => (
+                    <RegistrationFormField
+                      key={hField.name}
+                      label={hField.name
+                        .replace(/([A-Z])/g, " $1")
+                        .replace(/^./, (str) => str.toUpperCase())}
+                      startElement={<hField.icon />}
+                      fieldName={hField.name as keyof FormValues}
+                      required={hField.required}
+                      fieldType={hField?.type}
+                    />
+                  ))}
+                </HStack>
+              );
+            }
+            return null;
+          })}
+          <Button
+            type="submit"
+            className="text-white btn btn-success"
+            borderRadius={3}
+          >
             Submit
           </Button>
         </Stack>
@@ -112,4 +173,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default RegistrationForm;
