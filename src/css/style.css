@@ -393,7 +393,7 @@ body {
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-  background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)),
+  background: linear-gradient(rgba(32, 37, 32, 0.6), rgba(32, 37, 32, 0.6)),
     url(../assets/img/breadcrumb-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1212,7 +1212,7 @@ body {
 
 /*** Subscribe Start ***/
 .subscribe {
-  background: linear-gradient(rgba(19, 53, 123, 0.6), rgba(19, 53, 123, 0.6)),
+  background: linear-gradient(rgb(25, 135, 84), rgb(25, 135, 84)),
     url(../img/subscribe-img.jpg);
   background-attachment: fixed;
   background-position: center center;

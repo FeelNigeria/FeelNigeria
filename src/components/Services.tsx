@@ -14,7 +14,7 @@ const ServicesSection: React.FC<Props> = ({ standAlone }) => {
         <div className="container py-5">
           <div
             className="mx-auto text-center mb-5"
-            style={{ maxWidth: "900px;" }}
+            style={{ maxWidth: "900px" }}
           >
             <h5 className="section-title px-3 text-success">Services</h5>
             <h1 className="mb-0">Our Services</h1>

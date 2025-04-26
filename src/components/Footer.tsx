@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
                     <div className="form-floating">
                       <select
                         className="form-select bg-dark border text-secondary"
-                        id="select1"
+                        id="select2"
                       >
                         <option value="1">Arabic</option>
                         <option value="2">German</option>
