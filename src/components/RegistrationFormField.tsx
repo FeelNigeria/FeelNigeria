@@ -1,6 +1,6 @@
 import { Field, Input, InputGroup } from "@chakra-ui/react";
 import React from "react";
-import { useForm } from "react-hook-form";
+import { useForm, UseFormRegister } from "react-hook-form";
 
 export interface FormValues {
   fullName: string;
@@ -17,20 +17,21 @@ export interface FormValues {
 interface Props {
   label: string;
   fieldName: keyof FormValues;
+  register: UseFormRegister<FormValues>;
   startElement?: React.ReactNode;
   required?: boolean;
- fieldType?: string;
+  fieldType?: string;
 }
 
 const RegistrationFormField: React.FC<Props> = ({
   label,
   startElement,
   fieldName,
+  register,
   required = false,
   fieldType,
 }) => {
   const {
-    register,
     formState: { errors },
   } = useForm<FormValues>();
 

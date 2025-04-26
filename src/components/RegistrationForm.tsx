@@ -16,7 +16,7 @@ import axios from "axios";
 import RegistrationFormField, { FormValues } from "./RegistrationFormField";
 
 const RegistrationForm = () => {
-  const { handleSubmit } = useForm<FormValues>();
+  const { handleSubmit, register } = useForm<FormValues>();
 
   const onSubmit = handleSubmit(async (data) => {
     const payload = {
@@ -29,6 +29,7 @@ const RegistrationForm = () => {
       travel_date: data.travelDate,
       username: data.username,
     };
+    console.log("payload:", payload);
 
     try {
       const response = await axios.post(
@@ -133,6 +134,7 @@ const RegistrationForm = () => {
                   fieldName={field.name as keyof FormValues}
                   required={field.required}
                   fieldType={field?.type}
+                  register={register}
                 />
               );
             } else if (field.hStack) {
@@ -153,6 +155,7 @@ const RegistrationForm = () => {
                       fieldName={hField.name as keyof FormValues}
                       required={hField.required}
                       fieldType={hField?.type}
+                      register={register}
                     />
                   ))}
                 </HStack>
