@@ -3,10 +3,6 @@ import { AxiosRequestConfig, CanceledError } from "axios";
 import { useState } from "react";
 import { FormValues } from "@/components/ChakraFormField";
 
-interface PostResponse<T> {
-  data: T;
-}
-
 const usePost = <T>() => {
   const [data, setData] = useState<T | null>(null);
   const [error, setError] = useState("");
@@ -21,13 +17,14 @@ const usePost = <T>() => {
 
     setLoading(true);
     try {
-      const res = await apiClient.post<PostResponse<T>>(endpoint, payload, {
+      const res = await apiClient.post<T>(endpoint, payload, {
         signal: abortController.signal,
         ...requestConfig,
       });
-      setData(res.data.data);
+      setData(res.data);
     } catch (err) {
       if (err instanceof CanceledError) return;
+      console.error("Error:", err);
       setError((err as Error).message);
     } finally {
       setLoading(false);

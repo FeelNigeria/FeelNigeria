@@ -30,11 +30,14 @@ const RegistrationForm = () => {
       travel_date: formData.travelDate,
       username: formData.username,
     };
-    
+
     await createData(payload);
 
     if (data) {
       console.log("Form submitted successfully:", data);
+    }
+    if (error) {
+      console.error("Error submitting form:", error);
     }
   });
 

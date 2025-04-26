@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import { Box } from "@chakra-ui/react";
-import ChakraFormField from "./ChakraFormField";
+import ChakraFormField, { FormValues } from "./ChakraFormField";
 import { LuUser } from "react-icons/lu";
 import { useForm } from "react-hook-form";
 
