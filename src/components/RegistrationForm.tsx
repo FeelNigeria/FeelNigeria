@@ -10,10 +10,10 @@ import {
   LuFlag,
   LuPlane,
   LuCalendar,
-  LuLock
+  LuLock,
 } from "react-icons/lu";
-import axios from "axios";
 import RegistrationFormField, { FormValues } from "./RegistrationFormField";
+import useCreateCustomer from "@/hooks/useCreateCustomer";
 
 const RegistrationForm = () => {
   const { handleSubmit, register } = useForm<FormValues>();
@@ -31,24 +31,10 @@ const RegistrationForm = () => {
     };
     console.log("payload:", payload);
 
-    try {
-      const response = await axios.post(
-        "http://localhost:8000/api/v1/store/customers/",
-        payload,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+    const { data: response, error, isLoading } = useCreateCustomer(payload);
 
-      if (response.status < 200 || response.status >= 300) {
-        throw new Error("Failed to submit form");
-      }
-
-      console.log("Form submitted successfully:", response.data);
-    } catch (error) {
-      console.error("Error submitting form:", error);
+    if (response) {
+      console.log("Form submitted successfully:", response);
     }
   });
 
