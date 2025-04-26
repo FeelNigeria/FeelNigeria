@@ -1,12 +1,13 @@
 import apiClient from "../services/api-clients";
 import { AxiosRequestConfig, CanceledError } from "axios";
 import { useState } from "react";
+import { FormValues } from "@/components/ChakraFormField";
 
 interface PostResponse<T> {
   data: T;
 }
 
-const usePostData = <T>() => {
+const usePost = <T>() => {
   const [data, setData] = useState<T | null>(null);
   const [error, setError] = useState("");
   const [isLoading, setLoading] = useState(false);
@@ -36,6 +37,21 @@ const usePostData = <T>() => {
   };
 
   return { data, error, isLoading, postData };
+};
+
+const usePostData = <T>(endpoint: string) => {
+  const { data, error, isLoading, postData } = usePost<FormValues>();
+
+  const createData = async (payload: T) => {
+    await postData(endpoint, payload);
+  };
+
+  return {
+    data,
+    error,
+    isLoading,
+    createData,
+  };
 };
 
 export default usePostData;

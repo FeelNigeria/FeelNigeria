@@ -1212,7 +1212,7 @@ body {
 
 /*** Subscribe Start ***/
 .subscribe {
-  background: linear-gradient(rgb(25, 135, 84), rgb(25, 135, 84)),
+  background: linear-gradient(rgba(0, 128, 0, 0.6), rgba(0, 128, 0, 0.6)),
     url(../img/subscribe-img.jpg);
   background-attachment: fixed;
   background-position: center center;

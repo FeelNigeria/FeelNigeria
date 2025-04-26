@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, Stack, HStack } from "@chakra-ui/react";
+import { Box, Button, Stack, HStack, Spinner } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import Header from "./Header";
 import {
@@ -12,29 +12,29 @@ import {
   LuCalendar,
   LuLock,
 } from "react-icons/lu";
-import RegistrationFormField, { FormValues } from "./RegistrationFormField";
+import RegistrationFormField, { FormValues } from "./ChakraFormField";
 import useCreateCustomer from "@/hooks/useCreateCustomer";
 
 const RegistrationForm = () => {
   const { handleSubmit, register } = useForm<FormValues>();
+  const { createData, data, error, isLoading } = useCreateCustomer();
 
-  const onSubmit = handleSubmit(async (data) => {
+  const onSubmit = handleSubmit(async (formData) => {
     const payload = {
-      name: data.fullName,
-      phone_number: data.phoneNumber,
-      email: data.email,
-      nationality: data.nationality,
-      preferred_destination: data.preferredDestination,
-      password: data.password,
-      travel_date: data.travelDate,
-      username: data.username,
+      name: formData.fullName,
+      phone_number: formData.phoneNumber,
+      email: formData.email,
+      nationality: formData.nationality,
+      preferred_destination: formData.preferredDestination,
+      password: formData.password,
+      travel_date: formData.travelDate,
+      username: formData.username,
     };
-    console.log("payload:", payload);
+    
+    await createData(payload);
 
-    const { data: response, error, isLoading } = useCreateCustomer(payload);
-
-    if (response) {
-      console.log("Form submitted successfully:", response);
+    if (data) {
+      console.log("Form submitted successfully:", data);
     }
   });
 
@@ -149,13 +149,26 @@ const RegistrationForm = () => {
             }
             return null;
           })}
-          <Button
-            type="submit"
-            className="text-white btn btn-success"
-            borderRadius={3}
-          >
-            Submit
-          </Button>
+          {isLoading ? (
+            <HStack>
+              <Button
+                type="submit"
+                className="text-white btn btn-success"
+                borderRadius={3}
+              >
+                Submit
+              </Button>
+              <Spinner />
+            </HStack>
+          ) : (
+            <Button
+              type="submit"
+              className="text-white btn btn-success"
+              borderRadius={3}
+            >
+              Submit
+            </Button>
+          )}
         </Stack>
       </form>
     </Box>

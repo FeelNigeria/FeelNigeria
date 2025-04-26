@@ -1,4 +1,3 @@
-import { FormValues } from "@/components/RegistrationFormField";
 import usePostData from "./usePostData";
 
 interface CreateCustomerPayload {
@@ -12,15 +11,6 @@ interface CreateCustomerPayload {
   username: string;
 }
 
-const useCreateCustomer = (payload: CreateCustomerPayload) => {
-  const { data, error, isLoading, postData } = usePostData<FormValues>();
-  postData("/store/customers/", payload);
-
-  return {
-    data,
-    error,
-    isLoading,
-  };
-};
-
+const useCreateCustomer = () =>
+  usePostData<CreateCustomerPayload>("/store/customers/");
 export default useCreateCustomer;
