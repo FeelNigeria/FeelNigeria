@@ -10,7 +10,7 @@ interface Props {
 const Blog = ({ standAlone }: Props) => {
   return (
     <>
-      {standAlone && <Header />}
+      {standAlone && <Header child="Blogs" linkName="Blogs" />}
       <div className="container-fluid blog py-5">
         <div className="container py-5">
           <div

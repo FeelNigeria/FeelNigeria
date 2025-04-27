@@ -8,7 +8,7 @@ interface Props {
 const Package = ({ standAlone }: Props) => {
   return (
     <>
-      {standAlone && <Header />}
+      {standAlone && <Header linkName="Packages" child="Our Packages" />}
       <div
         className="container-fluid packages py-5 fw-light"
         style={{ fontFamily: "Roboto, sans-serif", fontSize: "0.9em" }}
