@@ -190,13 +190,11 @@ const ServicesSection: React.FC<Props> = ({ standAlone }) => {
             )}
             <div className="col-12">
               <div className="text-center">
-                <Link to="/services">
-                  <a
-                    className="btn btn-success rounded-pill py-3 px-5 mt-2"
-                    href=""
-                  >
-                    Read More
-                  </a>
+                <Link
+                  className="btn btn-success rounded-pill py-3 px-5 mt-2"
+                  to="/services"
+                >
+                  Read More
                 </Link>
               </div>
             </div>

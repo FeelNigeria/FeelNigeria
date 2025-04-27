@@ -121,13 +121,11 @@ const AboutUs: React.FC<Props> = ({ standalone }) => {
                 </div>
               </>
             )}
-            <Link to="/about">
-              <a
-                className="btn btn-success rounded-pill py-3 px-5 mt-2"
-                href="#"
-              >
-                Read More
-              </a>
+            <Link
+              to="/about"
+              className="btn btn-success rounded-pill py-3 px-5 mt-2"
+            >
+              Read More
             </Link>
           </div>
         </div>
