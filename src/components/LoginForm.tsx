@@ -8,7 +8,7 @@ import useLogin from "@/hooks/useLogin";
 
 const LoginForm: React.FC = () => {
   const { handleSubmit, register } = useForm<FormValues>();
-  const { createData, data, error, isLoading } = useLogin();
+  const { createData, data, isLoading } = useLogin();
 
   const onSubmit = handleSubmit(async (formData) => {
     const payload = {

@@ -12,7 +12,7 @@ const PackageImageItem = ({
   src,
   description,
   duration,
-  price,
+  // price,
   people,
 }: PackageItemProps) => {
   return (

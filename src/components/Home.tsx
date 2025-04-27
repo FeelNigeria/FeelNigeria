@@ -7,7 +7,6 @@ import HeroCarousel from "./HeroCarousel";
 import Package from "./Package";
 import ServicesSection from "./Services";
 import Subscribe from "./Subscribe";
-import Testimonials from "./Testimonials";
 import TourBooking from "./TourBooking";
 import TravelGuide from "./TravelGuide";
 import slideOneImage from "../assets/img/carousel-1.jpg";
