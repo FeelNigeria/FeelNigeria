@@ -20,23 +20,21 @@ const ContactUs = () => {
                   <i className="fa fa-map-marker-alt fa-3x text-success"></i>
                   <h4 className="text-success">Our Office Address</h4>
                   <p className="mb-0">
-                    Roli Bar, Okanlawon Ajayi,
+                    20, Ajasa Street off King George IV,
                     <br />
-                    Lagos, Nigeria.
+                    Onikan Lagos Nigeria
                   </p>
                 </div>
                 <div className="text-center mb-4">
                   <i className="fa fa-phone-alt fa-3x text-success mb-3"></i>
                   <h4 className="text-success">Mobile</h4>
                   <p className="mb-0">+234 803 475 1038</p>
-                  <p className="mb-0">+234 802 892 4008</p>
                 </div>
 
                 <div className="text-center">
                   <i className="fa fa-envelope-open fa-3x text-success mb-3"></i>
                   <h4 className="text-success">Email</h4>
                   <p className="mb-0">info@feelnigeria.com</p>
-                  <p className="mb-0">info2@feelnigeria.com</p>
                 </div>
               </div>
             </div>

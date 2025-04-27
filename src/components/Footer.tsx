@@ -18,9 +18,9 @@ const Footer: React.FC = () => {
               <a href="" className="text-decoration-none">
                 <i className="fas fa-phone me-2"></i> +234 803 475 1038
               </a>
-              <a href="" className="mb-3 text-decoration-none">
+              {/* <a href="" className="mb-3 text-decoration-none">
                 <i className="fas fa-print me-2"></i> +234 802 892 4008
-              </a>
+              </a> */}
               <div className="d-flex align-items-center">
                 <i className="fas fa-share fa-2x text-white me-2"></i>
                 <a
