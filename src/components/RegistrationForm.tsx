@@ -35,6 +35,7 @@ const RegistrationForm = () => {
 
     if (data) {
       console.log("Form submitted successfully:", data);
+      window.location.href = "/login";
     }
     if (error) {
       console.error("Error submitting form:", error);
@@ -159,7 +160,7 @@ const RegistrationForm = () => {
                 className="text-white btn btn-success"
                 borderRadius={3}
               >
-                Submit
+                Register
               </Button>
               <Spinner />
             </HStack>
@@ -169,7 +170,7 @@ const RegistrationForm = () => {
               className="text-white btn btn-success"
               borderRadius={3}
             >
-              Submit
+              Register
             </Button>
           )}
         </Stack>

@@ -1,18 +1,13 @@
 import apiClient from "../services/api-clients";
 import { AxiosRequestConfig, CanceledError } from "axios";
 import { useState } from "react";
-import { FormValues } from "@/components/ChakraFormField";
 
-const usePost = <T>() => {
+const usePostData = <T>(endpoint: string) => {
   const [data, setData] = useState<T | null>(null);
   const [error, setError] = useState("");
   const [isLoading, setLoading] = useState(false);
 
-  const postData = async (
-    endpoint: string,
-    payload: any,
-    requestConfig?: AxiosRequestConfig
-  ) => {
+  const createData = async (payload: T, requestConfig?: AxiosRequestConfig) => {
     const abortController = new AbortController();
 
     setLoading(true);
@@ -31,16 +26,6 @@ const usePost = <T>() => {
     }
 
     return () => abortController.abort();
-  };
-
-  return { data, error, isLoading, postData };
-};
-
-const usePostData = <T>(endpoint: string) => {
-  const { data, error, isLoading, postData } = usePost<FormValues>();
-
-  const createData = async (payload: T) => {
-    await postData(endpoint, payload);
   };
 
   return {

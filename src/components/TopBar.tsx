@@ -24,9 +24,9 @@ const TopBar = () => {
         <Link to="/registration" className="nav-link text-light">
           <i className="fas fa-user me-2"></i> Register
         </Link>
-        <a href="#" className="nav-link text-light">
+        <Link to="/login" className="nav-link text-light">
           <i className="fa fa-sign-in-alt me-2"></i> Login
-        </a>
+        </Link>
         <div className="dropdown">
           <a
             href="#"
