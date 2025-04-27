@@ -187,7 +187,7 @@ const ServicesSection: React.FC<Props> = ({ standAlone }) => {
                   className="btn btn-success rounded-pill py-3 px-5 mt-2"
                   href=""
                 >
-                  Service More
+                  Read More
                 </a>
               </div>
             </div>

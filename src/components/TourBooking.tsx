@@ -120,7 +120,7 @@ const TourBooking = () => {
                 </div>
                 <div className="col-12">
                   <button
-                    className="btn btn-success text-white w-100 py-3"
+                    className="btn btn-light text-success w-100 py-3"
                     type="submit"
                   >
                     Book Now

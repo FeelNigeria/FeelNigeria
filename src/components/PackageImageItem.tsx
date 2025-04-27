@@ -35,7 +35,7 @@ const PackageImageItem = ({
           {people} Person
         </small>
       </div>
-      <div className="packages-price py-2 px-3 fw-bold">${price}</div>
+      {/* <div className="packages-price py-2 px-3 fw-bold">${price}</div> */}
     </div>
   );
 };

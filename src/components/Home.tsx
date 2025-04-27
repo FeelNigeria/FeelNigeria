@@ -55,7 +55,7 @@ const Home = () => {
       <TourBooking />
       <TravelGuide />
       <Blog />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </>
   );
 };

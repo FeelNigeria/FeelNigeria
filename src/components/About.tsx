@@ -5,8 +5,8 @@ import TravelGuide from "./TravelGuide";
 const About = () => {
   return (
     <>
-      <Header />
-      <AboutUs />
+      <Header child="About Us" linkName="About Us" />
+      <AboutUs standalone={true} />
       <TravelGuide />
     </>
   );

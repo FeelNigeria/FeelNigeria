@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 interface Props {
   child?: string;
+  linkName?: string
 }
 
-const Header: React.FC<Props> = ({ child }) => {
+const Header: React.FC<Props> = ({ child, linkName }) => {
   return (
     <div className="container-fluid bg-breadcrumb">
       <div
@@ -21,7 +22,7 @@ const Header: React.FC<Props> = ({ child }) => {
             <Link to="/pages">Pages</Link>
           </li>
           <Link to="/services" className="breadcrumb-item active text-white">
-            Services
+            {linkName || 'Services'}
           </Link>
         </ol>
       </div>
