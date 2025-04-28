@@ -93,11 +93,13 @@ const Destination = () => {
                   <div className="row g-4">
                     <div className="col-lg-6">
                       <div className="destination-img">
-                        <img
+                        <Image
                           className="img-fluid rounded w-100"
                           src={destinationImg1}
                           alt=""
-                        ></img>
+                          minHeight={"270px"}
+                          objectFit={"cover"}
+                        ></Image>
                         <DestinationOverlay
                           location="Elegushi Beach"
                           dataLightbox="1"
