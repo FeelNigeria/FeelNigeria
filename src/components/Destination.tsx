@@ -170,11 +170,13 @@ const Destination = () => {
                 </div>
                 <div className="col-lg-4">
                   <div className="destination-img">
-                    <img
+                    <Image
                       className="img-fluid rounded w-100"
                       src={destinationImg4}
                       alt=""
-                    ></img>
+                      objectFit='cover'
+                      minHeight={'250px'}
+                    ></Image>
                     <DestinationOverlay
                       location="La Campagne Tropicana Beach"
                       dataLightbox="4"
