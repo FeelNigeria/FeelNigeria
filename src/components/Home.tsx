@@ -12,7 +12,6 @@ import TravelGuide from "./TravelGuide";
 import slideOneImage from "../assets/img/carousel-1.jpg";
 import slideTwoImage from "../assets/img/carousel-2.jpg";
 import slideThreeImage from "../assets/img/carousel-3.jpg";
-import GridTest from "./DestinationGrid";
 
 const heroSlides = [
   {
