@@ -1,12 +1,13 @@
 import DestinationOverlay from "./DestinationOverlay";
 import destinationImg1 from "../assets/img/destination-1.jpg";
 import destinationImg2 from "../assets/img/destination-2.jpg";
-import destinationImg7 from "../assets/img/destination-7.jpg";
-import destinationImg8 from "../assets/img/destination-8.jpg";
+import destinationImg7 from "../assets/img/destination-7.webp";
+import destinationImg8 from "../assets/img/destination-8.webp";
 import destinationImg9 from "../assets/img/destination-9.jpg";
 import destinationImg4 from "../assets/img/destination-4.jpg";
 import destinationImg5 from "../assets/img/destination-5.jpg";
 import destinationImg6 from "../assets/img/destination-6.jpg";
+import { Image } from "@chakra-ui/react";
 
 const Destination = () => {
   return (
@@ -134,11 +135,13 @@ const Destination = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="destination-img">
-                        <img
+                        <Image
                           className="img-fluid rounded w-100"
                           src={destinationImg8}
                           alt=""
-                        ></img>
+                          objectFit={'cover'}
+                          minHeight={"270px"}
+                        ></Image>
                         <DestinationOverlay
                           dataLightbox="8"
                           location="Assop Falls & River"
