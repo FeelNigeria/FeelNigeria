@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import { Box, Button, HStack, Spinner, Stack } from "@chakra-ui/react";
 import ChakraFormField, { FormValues } from "./ChakraFormField";
-import { LuLock, LuUser } from "react-icons/lu";
+import { LuLock, LuMail, LuUser } from "react-icons/lu";
 import { useForm } from "react-hook-form";
 import useLogin from "@/hooks/useLogin";
 
@@ -12,7 +12,7 @@ const LoginForm: React.FC = () => {
 
   const onSubmit = handleSubmit(async (formData) => {
     const payload = {
-      username: formData.username,
+      email: formData.email,
       password: formData.password,
     };
 
@@ -30,9 +30,9 @@ const LoginForm: React.FC = () => {
       <form className="m-5" onSubmit={onSubmit}>
         <Stack gap="4" align="flex-start">
           <ChakraFormField
-            label="Username"
-            startElement={<LuUser />}
-            fieldName="username"
+            label="Email"
+            startElement={<LuMail />}
+            fieldName="email"
             register={register}
             required={true}
           />

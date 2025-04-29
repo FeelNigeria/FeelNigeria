@@ -1,4 +1,4 @@
-import { Grid, GridItem, Image } from "@chakra-ui/react";
+import { Grid, GridItem, Image, useBreakpointValue } from "@chakra-ui/react";
 import destinationImg1 from "../assets/img/destination-1.jpg";
 import getValidImageUrl from "@/services/get-valid-image-url";
 import DestinationOverlay from "./DestinationOverlay";
@@ -14,6 +14,15 @@ const DestinationGrid = () => {
     { item: 7, location: "Aso Rock" },
     { item: 8, location: "Assop Falls & River" },
   ];
+
+  const screenSize = useBreakpointValue({
+    base: "mobile",
+    sm: "small",
+    md: "medium",
+    lg: "large",
+    xl: "extra-large",
+  });
+  
   return (
     <div className="container-fluid destination">
       <Grid
@@ -27,8 +36,8 @@ const DestinationGrid = () => {
       >
         {imageArray.map(({ item, location }) => {
           const href = getValidImageUrl(item, "destination");
-          const rowSpan = item === 3 ? 2 : 1;
-          const height = item === 3 ? "520px" : "250px";
+          const rowSpan = item === 3 && screenSize !== 'medium' ? 2 : 1;
+          const height = item === 3 && screenSize !== 'medium' ? "520px" : "250px";
 
           return (
             <GridItem key={item} rowSpan={rowSpan}>

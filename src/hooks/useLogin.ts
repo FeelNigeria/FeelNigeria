@@ -1,7 +1,7 @@
 import usePostData from "./usePostData";
 
 interface LoginPayload {
-    username: string;
+    email: string;
     password: string;
 }
 
