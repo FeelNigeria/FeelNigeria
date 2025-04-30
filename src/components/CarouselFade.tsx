@@ -83,6 +83,7 @@ export default function CarouselFade() {
             alt={title}
             height={"80vh"}
             objectFit="cover"
+            // filter="brightness(50%)"
           />
           <DestinationDescription title={title} description={description} />
         </SimpleGrid>
