@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import { Box, Button, HStack, Spinner, Stack } from "@chakra-ui/react";
 import ChakraFormField, { FormValues } from "./ChakraFormField";
-import { LuLock, LuMail, LuUser } from "react-icons/lu";
+import { LuLock, LuMail } from "react-icons/lu";
 import { useForm } from "react-hook-form";
 import useLogin from "@/hooks/useLogin";
 
