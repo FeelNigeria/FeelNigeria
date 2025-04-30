@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/NavBar";
-import TopBar from "./components/TopBar";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Copyright from "./components/Copyright";
@@ -14,7 +13,6 @@ import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import RegistrationForm from "./components/RegistrationForm";
 import LoginForm from "./components/LoginForm";
-import HeroCarousel from "./components/HeroCarousel";
 
 const navLinks = [
   { title: "Home", href: "/" },
