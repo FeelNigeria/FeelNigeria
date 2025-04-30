@@ -43,11 +43,11 @@ const heroSlides = [
 const Home = () => {
   return (
     <>
-      <HeroCarousel slides={heroSlides} />
+      <HeroCarousel />
       <AboutUs />
       <ServicesSection />
       <Destination />
-      <Subscribe />
+      {/* <Subscribe /> */}
       <Explore />
       <Package />
       <Gallery />
