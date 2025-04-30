@@ -1,7 +1,8 @@
+import React from "react";
 import { chakra } from "@chakra-ui/react";
-import home from '@/assets/img/home.mp4'
+import home from "@/assets/img/home.mp4";
 
-const VideoPlayer = () => {
+const VideoPlayer: React.FC = () => {
   const ChakraVideo = chakra("video");
 
   return (
@@ -12,9 +13,11 @@ const VideoPlayer = () => {
       loop
       muted
       width="100vw"
+      preload="auto"
       height="100vh"
       objectFit="cover"
-      display={["block", "block", "block", "block"]}
+      objectPosition="center bottom"
+      display="block"
       shadow="md"
     />
   );

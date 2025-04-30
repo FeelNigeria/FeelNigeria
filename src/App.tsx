@@ -14,13 +14,13 @@ import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import RegistrationForm from "./components/RegistrationForm";
 import LoginForm from "./components/LoginForm";
+import HeroCarousel from "./components/HeroCarousel";
 
 const navLinks = [
   { title: "Home", href: "/" },
   { title: "About", href: "/about" },
   { title: "Services", href: "/services" },
   { title: "Packages", href: "/packages" },
-  { title: "Blog", href: "/blog" },
   {
     title: "Pages",
     dropdown: [
@@ -60,7 +60,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      {!isMobileView && <TopBar />}
+      {/* {!isMobileView && <TopBar />} */}
       <Navbar
         onSelectNavLink={(title) => setSelectedNavLink(title)}
         selectedNavLink={selectedNavLink}

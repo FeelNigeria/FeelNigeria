@@ -48,12 +48,12 @@ const Home = () => {
       <ServicesSection />
       <Destination />
       {/* <Subscribe /> */}
-      <Explore />
-      <Package />
-      <Gallery />
+      {/* <Explore /> */}
+      {/* <Package /> */}
+      {/* <Gallery /> */}
       <TourBooking />
       <TravelGuide />
-      <Blog />
+      {/* <Blog /> */}
       {/* <Testimonials /> */}
     </>
   );

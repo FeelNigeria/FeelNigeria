@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header";
-import Testimonials from "./Testimonials";
 import { Link } from "react-router-dom";
 
 interface Props {
@@ -201,7 +200,6 @@ const ServicesSection: React.FC<Props> = ({ standAlone }) => {
           </div>
         </div>
       </div>
-      {standAlone && <Testimonials />}
     </>
   );
 };
