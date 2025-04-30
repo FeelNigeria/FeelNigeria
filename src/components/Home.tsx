@@ -40,7 +40,7 @@ const Home = () => {
       <AboutUs />
       <ServicesSection />
       <CarouselFade />
-      <Destination />
+      {/* <Destination /> */}
       {/* <Subscribe /> */}
       {/* <Explore /> */}
       {/* <Package /> */}
