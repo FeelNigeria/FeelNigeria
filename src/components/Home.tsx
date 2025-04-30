@@ -1,5 +1,4 @@
 import AboutUs from "./AboutUs";
-import Destination from "./Destination";
 import HeroCarousel from "./HeroCarousel";
 import ServicesSection from "./Services";
 import TourBooking from "./TourBooking";
