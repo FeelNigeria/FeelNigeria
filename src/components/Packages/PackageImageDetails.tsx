@@ -3,10 +3,10 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import PackageContent from "./PackageContent";
 import PackageImageItem from "./PackageImageItem";
-import packageImg1 from "../assets/img/packages-1.jpg";
-import packageImg2 from "../assets/img/packages-2.jpg";
-import packageImg3 from "../assets/img/packages-3.jpg";
-import packageImg4 from "../assets/img/packages-4.jpg";
+import packageImg1 from "../../assets/img/packages-1.jpg";
+import packageImg2 from "../../assets/img/packages-2.jpg";
+import packageImg3 from "../../assets/img/packages-3.jpg";
+import packageImg4 from "../../assets/img/packages-4.jpg";
 
 interface imageItemDetail {
   src: string;
