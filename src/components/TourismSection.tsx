@@ -34,8 +34,6 @@ const TourismSection = () => {
           Nigeria
         </Text>
 
-        {/* Custom vertical bar at bottom */}
-        <Box width="1px" height="20px" bg="gray.400" mt={4} />
         <Link
           to={"/booking"}
           className="btn btn-success rounded-pill py-2 px-4 ms-lg-4"
