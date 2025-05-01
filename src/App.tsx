@@ -8,7 +8,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Subscribe from "./components/Subscribe";
 import Blog from "./components/Blog";
-import Package from "./components/Package";
+import Package from "./components/Packages/Package";
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import RegistrationForm from "./components/RegistrationForm";

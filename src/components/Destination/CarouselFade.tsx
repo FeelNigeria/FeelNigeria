@@ -1,7 +1,7 @@
 import getValidImageUrl from "@/services/get-valid-image-url";
 import { Image, SimpleGrid } from "@chakra-ui/react";
 import OwlCarousel from "react-owl-carousel";
-import DestinationDescription from "./Destination/DestinationDescription";
+import DestinationDescription from "./DestinationDescription";
 import getScreenSize from "@/services/get-screen-size";
 
 const images = [

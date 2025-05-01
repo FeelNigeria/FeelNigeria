@@ -1,9 +1,7 @@
-import AboutUs from "./AboutUs";
 import HeroCarousel from "./HeroCarousel";
-import ServicesSection from "./Services";
 import TourBooking from "./TourBooking";
 import TravelGuide from "./TravelGuide";
-import CarouselFade from "./CarouselFade";
+import CarouselFade from "./Destination/CarouselFade";
 
 // const heroSlides = [
 //   {

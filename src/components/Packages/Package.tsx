@@ -1,6 +1,6 @@
-import Header from "./Header";
+import Header from "../Header";
 import PackageImageDetails from "./PackageImageDetails";
-import TourBooking from "./TourBooking";
+import TourBooking from "../TourBooking";
 interface Props {
   standAlone?: Boolean;
 }
