@@ -36,18 +36,9 @@ const Home = () => {
     <>
       <HeroCarousel />
       <TourismSection />
-      {/* <AboutUs />
-      <ServicesSection /> */}
       <CarouselFade />
-      {/* <Destination /> */}
-      {/* <Subscribe /> */}
-      {/* <Explore /> */}
-      {/* <Package /> */}
-      {/* <Gallery /> */}
       <TourBooking />
       <TravelGuide />
-      {/* <Blog /> */}
-      {/* <Testimonials /> */}
     </>
   );
 };
