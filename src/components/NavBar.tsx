@@ -28,7 +28,6 @@ const Navbar: React.FC<Props> = ({
   navLinks,
   onSelectNavLink,
   selectedNavLink,
-  brand = "Feel Nigeria",
   isMobileView = false,
 }: Props) => {
   const [isSticky, setIsSticky] = useState(false);

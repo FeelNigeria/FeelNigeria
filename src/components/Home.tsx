@@ -36,8 +36,8 @@ const Home = () => {
   return (
     <>
       <HeroCarousel />
-      <AboutUs />
-      <ServicesSection />
+      {/* <AboutUs />
+      <ServicesSection /> */}
       <CarouselFade />
       {/* <Destination /> */}
       {/* <Subscribe /> */}
