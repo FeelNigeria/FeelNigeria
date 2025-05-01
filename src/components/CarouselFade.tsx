@@ -2,6 +2,7 @@ import getValidImageUrl from "@/services/get-valid-image-url";
 import { Image, SimpleGrid } from "@chakra-ui/react";
 import OwlCarousel from "react-owl-carousel";
 import DestinationDescription from "./Destination/DestinationDescription";
+import getScreenSize from "@/services/get-screen-size";
 
 const images = [
   {
@@ -64,6 +65,12 @@ const carouselOptions = {
 };
 
 export default function CarouselFade() {
+  const screenSize = getScreenSize();
+
+  const height = ["mobile", "small"].includes(screenSize || "")
+    ? "40vh"
+    : "80vh";
+
   return (
     <OwlCarousel {...carouselOptions}>
       {images.map(({ src, title, description }, idx) => (
@@ -81,7 +88,7 @@ export default function CarouselFade() {
           <Image
             src={getValidImageUrl(src, "destination")}
             alt={title}
-            height={"80vh"}
+            height={height}
             objectFit="cover"
             // filter="brightness(50%)"
           />

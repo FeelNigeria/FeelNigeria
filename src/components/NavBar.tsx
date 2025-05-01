@@ -60,14 +60,11 @@ const Navbar: React.FC<Props> = ({
             isSticky ? "text-success" : "text-white"
           }`}
         >
-          <HStack>
             <Image
               src={logo}
               boxSize={isMobileView ? "50Px" : "60px"}
               borderRadius={10}
             />
-            <h1 className="m-0">{brand}</h1>
-          </HStack>
         </Link>
         <button
           className="navbar-toggler"
