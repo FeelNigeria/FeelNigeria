@@ -50,9 +50,9 @@ const Navbar: React.FC<Props> = ({
       }`}
     >
       <nav
-        className={`navbar navbar-expand-lg navbar-light ${isMobileView? "px-2": "px-4"} px-lg-5 py-4 py-lg-1 ${
-          isSticky ? "bg-light" : ""
-        }`}
+        className={`navbar navbar-expand-lg navbar-light ${
+          isMobileView ? "px-2" : "px-4"
+        } px-lg-5 py-4 py-lg-1 ${isSticky ? "bg-light" : ""}`}
       >
         <Link
           to="/"
@@ -60,11 +60,7 @@ const Navbar: React.FC<Props> = ({
             isSticky ? "text-success" : "text-white"
           }`}
         >
-            <Image
-              src={logo}
-              boxSize={isMobileView ? "50Px" : "60px"}
-              borderRadius={10}
-            />
+          <Image src={logo} boxSize={"40px"} borderRadius={10} />
         </Link>
         <button
           className="navbar-toggler"
@@ -93,7 +89,7 @@ const Navbar: React.FC<Props> = ({
                   <a
                     href="#"
                     className={`nav-link dropdown-toggle ${
-                      isSticky ? "" : "text-white"
+                      isSticky ? "text-success" : "text-white"
                     }`}
                     data-bs-toggle="dropdown"
                   >
@@ -115,7 +111,7 @@ const Navbar: React.FC<Props> = ({
                 <Link
                   to={link.href ?? "#"}
                   className={`nav-item nav-link ${
-                    isSticky ? "" : "text-white"
+                    isSticky ? "text-success" : "text-white"
                   } ${
                     link.title == selectedNavLink ? "bg-success text-white" : ""
                   }`}
