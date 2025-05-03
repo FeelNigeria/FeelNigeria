@@ -72,7 +72,7 @@ export default function CarouselFade() {
     : "80vh";
 
   return (
-    <OwlCarousel {...carouselOptions}  className="owl-carousel bg-light" height={height}>
+    <OwlCarousel {...carouselOptions}  className="owl-carousel bg-light">
       {images.map(({ src, title, description }, idx) => (
         <SimpleGrid
           templateRows="repeat(1, 1fr)"
@@ -85,7 +85,6 @@ export default function CarouselFade() {
           gap={3}
           className="bg-light"
           m={0}
-          height={height}
         >
           <Image
             src={getValidImageUrl(src, "destination")}
