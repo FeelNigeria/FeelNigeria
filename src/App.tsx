@@ -14,6 +14,7 @@ import ContactUs from "./components/ContactUs";
 import RegistrationForm from "./components/RegistrationForm";
 import LoginForm from "./components/LoginForm";
 import TravelSearch from "./components/Sabre/TravelSearch";
+// import Navbar from "./components/Navbar/Navbar";
 
 const navLinks = [
   { title: "Home", href: "/" },
@@ -66,6 +67,7 @@ const App: React.FC = () => {
         navLinks={navLinks}
         isMobileView={isMobileView}
       />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/booking" element={<TravelSearch />} />

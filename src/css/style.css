@@ -157,7 +157,7 @@ body {
 .navbar-light .navbar-nav .nav-link {
   font-family: "Roboto", sans-serif;
   position: relative;
-  padding: 35px 15px;
+  /* padding: 35px 15px; */
   /* color: var(--bs-success) !important; */
   font-size: 17px;
   font-weight: 400;
