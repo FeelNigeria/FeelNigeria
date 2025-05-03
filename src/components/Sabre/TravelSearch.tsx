@@ -36,12 +36,12 @@ const TravelSearch = () => {
 
       {/* Date Range */}
       <InputGroup startElement={<Icon as={FaCalendarAlt} color="gray.500" />}>
-        <Input value={dateRange} readOnly />
+        <Input value={dateRange} readOnly onInput={() => setDateRange("")} />
       </InputGroup>
 
       {/* Travelers */}
       <InputGroup startElement={<Icon as={FaUser} color="gray.500" />}>
-        <Input value={travelers} readOnly />
+        <Input value={travelers} onInput={() => setTravelers("")} readOnly />
       </InputGroup>
 
       {/* Optional Add-ons */}
