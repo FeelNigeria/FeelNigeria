@@ -1,6 +1,5 @@
 import HeroCarousel from "./HeroCarousel";
 import TourBooking from "./TourBooking";
-import TravelGuide from "./TravelGuide";
 import CarouselFade from "./Destination/CarouselFade";
 import TourismSection from "./TourismSection";
 
@@ -38,7 +37,7 @@ const Home = () => {
       <TourismSection />
       <CarouselFade />
       <TourBooking />
-      <TravelGuide />
+      {/* <TravelGuide /> */}
     </>
   );
 };
