@@ -1,13 +1,15 @@
 export default function getValidImageUrl(
   galleryNumber: number,
-  filepath?: string
+  fileFirstName?: string,
+  filename?: string
 ): string {
   const extensions = ["jpg", "png", "webp"];
-  filepath = filepath || "gallery";
+  fileFirstName = fileFirstName || "gallery";
   for (const ext of extensions) {
+     filename = filename || `${fileFirstName}-${galleryNumber}`;
     try {
       const url = new URL(
-        `../assets/img/${filepath}-${galleryNumber}.${ext}`,
+        `../assets/img/${filename}.${ext}`,
         import.meta.url
       ).href;
       return url; // Return the first valid URL

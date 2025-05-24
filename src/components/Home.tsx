@@ -1,7 +1,8 @@
 import HeroCarousel from "./HeroCarousel";
 import TourBooking from "./TourBooking";
-import CarouselFade from "./Destination/CarouselFade";
+import PopularDestination from "./Destination/PopularDestination";
 import TourismSection from "./TourismSection";
+import FestivalGrid from "./Festival/FestivalGrid";
 
 // const heroSlides = [
 //   {
@@ -35,8 +36,10 @@ const Home = () => {
     <>
       <HeroCarousel />
       <TourismSection />
-      <CarouselFade />
+      <PopularDestination />
+      <FestivalGrid />
       <TourBooking />
+      {/* Uncomment the line below to include the TravelGuide component */}
       {/* <TravelGuide /> */}
     </>
   );
