@@ -20,7 +20,7 @@ function FestivalContent({ data }: { data: ParsedElement[] }) {
   const after = data.slice(firstIdx + 1);
 
   return (
-    <div className="px-2">
+    <div className="px-2 justify-content-center align-items-center text-center">
       {before.map((item, index) => {
         switch (item.type) {
           case "h2":

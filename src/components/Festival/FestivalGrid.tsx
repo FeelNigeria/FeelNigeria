@@ -22,71 +22,72 @@ const carouselOptions = {
 
 export default function CarouselFade({ standalone }: Props) {
   const screenSize = getScreenSize();
+  const isMobile = ["mobile", "small"].includes(screenSize || "");
 
-  const height = ["mobile", "small"].includes(screenSize || "")
-    ? "40vh"
-    : "80vh";
+  const height = isMobile ? "40vh" : "80vh";
+  const imageJsx = (title: string, filename: string) => (
+    <Image
+      src={getValidImageUrl(1, "", filename)}
+      alt={title}
+      height={height}
+      objectFit="cover"
+      m={0}
+      className="px-2 py-2 img-fluid rounded"
+    />
+  );
+  const templateColumns = {
+    base: "repeat(1, 1fr)",
+    md: "repeat(2, 1fr)",
+    lg: "repeat(2, 1fr)",
+  };
+
+  const gridOptions = {
+    templateColumns,
+    gap: 3,
+    className: "bg-light",
+    m: 0,
+  };
+
+  const renderGrid = () => (
+    <Grid {...gridOptions}>
+      {data.map(({ filename, title, description }, idx) => (
+        <GridItem key={idx}>
+          {imageJsx(title, filename)}
+          <TextToContent data={description} />
+        </GridItem>
+      ))}
+    </Grid>
+  );
+
+  const renderCarousel = () => (
+    <OwlCarousel {...carouselOptions} className="owl-carousel bg-light">
+      {data.map(({ filename, title, description }, idx) => (
+        <SimpleGrid templateRows="repeat(1, 1fr)" {...gridOptions} key={idx}>
+          {isMobile ? (
+            <>
+              {imageJsx(title, filename)}
+              <TextToContent data={description} />
+            </>
+          ) : (
+            <>
+              <TextToContent data={description} />
+              {imageJsx(title, filename)}
+            </>
+          )}
+        </SimpleGrid>
+      ))}
+    </OwlCarousel>
+  );
 
   if (standalone) {
     return (
       <>
         <Header child="Festival Highlights" linkName="Festivals" />
-        <div className="pb-2">
-          <Grid
-            templateColumns={{
-              base: "repeat(1, 1fr)",
-              md: "repeat(2, 1fr)",
-              lg: "repeat(2, 1fr)",
-            }}
-            gap={3}
-            className="bg-light"
-            m={0}
-          >
-            {data.map(({ filename, title, description }, idx) => (
-              <GridItem key={idx}>
-                <Image
-                  src={getValidImageUrl(1, "", filename)}
-                  alt={title}
-                  height={height}
-                  objectFit="cover"
-                  m={0}
-                  className="px-2 py-2 img-fluid rounded"
-                />
-                <TextToContent data={description} />
-              </GridItem>
-            ))}
-          </Grid>
-        </div>
+        <div className="pb-2">{renderGrid()}</div>
         <TourBooking />
       </>
     );
   }
 
-  return (
-    <OwlCarousel {...carouselOptions} className="owl-carousel bg-light">
-      {data.map(({ filename, title, description }, idx) => (
-        <SimpleGrid
-          templateRows="repeat(1, 1fr)"
-          templateColumns={{
-            base: "repeat(1, 1fr)",
-            md: "repeat(2, 1fr)",
-            lg: "repeat(2, 1fr)",
-          }}
-          key={idx}
-          gap={3}
-          className="bg-light"
-          m={0}
-        >
-          <TextToContent data={description} />
-          <Image
-            src={getValidImageUrl(1, "", filename)}
-            alt={title}
-            height={height}
-            objectFit="cover"
-            m={0}
-          />
-        </SimpleGrid>
-      ))}
-    </OwlCarousel>
-  );
+  return renderCarousel();
 }
