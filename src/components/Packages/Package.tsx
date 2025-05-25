@@ -2,13 +2,13 @@ import Header from "../Header";
 import PackageImageDetails from "./PackageImageDetails";
 import TourBooking from "../TourBooking";
 interface Props {
-  standAlone?: Boolean;
+  standalone?: Boolean;
 }
 
-const Package = ({ standAlone }: Props) => {
+const Package = ({ standalone }: Props) => {
   return (
     <>
-      {standAlone && <Header linkName="Packages" child="Our Packages" />}
+      {standalone && <Header linkName="Packages" child="Our Packages" />}
       <div
         className="container-fluid packages py-5 fw-light"
         style={{ fontFamily: "Roboto, sans-serif", fontSize: "0.9em" }}
@@ -36,7 +36,7 @@ const Package = ({ standAlone }: Props) => {
           <PackageImageDetails />
         </div>
       </div>
-      {standAlone && <TourBooking />}
+      {standalone && <TourBooking />}
     </>
   );
 };

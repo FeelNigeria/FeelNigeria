@@ -14,6 +14,7 @@ import ContactUs from "./components/ContactUs";
 import RegistrationForm from "./components/RegistrationForm";
 import LoginForm from "./components/LoginForm";
 import TravelSearch from "./components/Sabre/TravelSearch";
+import FestivalGrid from "./components/Festival/FestivalGrid";
 // import Navbar from "./components/Navbar/Navbar";
 
 const navLinks = [
@@ -72,8 +73,9 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/booking" element={<TravelSearch />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services standAlone={true} />} />
-        <Route path="/packages" element={<Package standAlone={true} />} />
+        <Route path="/services" element={<Services standalone={true} />} />
+        <Route path="/packages" element={<Package standalone={true} />} />
+        <Route path="/festivals" element={<FestivalGrid standalone={true} />} />
         <Route path="/blog" element={<Blog standAlone={true} />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/registration" element={<RegistrationForm />} />

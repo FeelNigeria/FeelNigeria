@@ -3,13 +3,13 @@ import Header from "./Header";
 import { Link } from "react-router-dom";
 
 interface Props {
-  standAlone?: boolean;
+  standalone?: boolean;
 }
 
-const ServicesSection: React.FC<Props> = ({ standAlone }) => {
+const ServicesSection: React.FC<Props> = ({ standalone }) => {
   return (
     <>
-      {standAlone && <Header />}
+      {standalone && <Header />}
       <div className="container-fluid bg-light service py-5">
         <div className="container py-5">
           <div
@@ -35,7 +35,7 @@ const ServicesSection: React.FC<Props> = ({ standAlone }) => {
             </p>
           </div>
           <div className="row g-4">
-            {standAlone && (
+            {standalone && (
               <>
                 <div className="col-lg-6">
                   <div className="row g-4">

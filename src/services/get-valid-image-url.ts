@@ -6,12 +6,13 @@ export default function getValidImageUrl(
   const extensions = ["jpg", "png", "webp"];
   fileFirstName = fileFirstName || "gallery";
   for (const ext of extensions) {
-     filename = filename || `${fileFirstName}-${galleryNumber}`;
+    filename = filename?.includes(".")
+      ? filename
+      : filename
+      ? `${filename}.${ext}`
+      : `${fileFirstName}-${galleryNumber}.${ext}`;
     try {
-      const url = new URL(
-        `../assets/img/${filename}.${ext}`,
-        import.meta.url
-      ).href;
+      const url = new URL(`../assets/img/${filename}`, import.meta.url).href;
       return url; // Return the first valid URL
     } catch {
       // Ignore errors and try the next extension
