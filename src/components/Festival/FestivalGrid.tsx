@@ -32,7 +32,7 @@ export default function CarouselFade({ standalone }: Props) {
       height={height}
       objectFit="cover"
       m={0}
-      className="px-2 py-2 img-fluid rounded"
+      className="px-1 py-1 img-fluid rounded"
     />
   );
   const templateColumns = {

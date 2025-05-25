@@ -1,4 +1,4 @@
-export type ElementType = "h2" | "h3" | "p" | "ul" | "strong";
+export type ElementType = "h2" | "strong" | "p" | "ul" | "strong";
 export interface ParsedElement {
   type: ElementType;
   content: string | string[];
@@ -23,7 +23,7 @@ const data: {
           "The Mmanwu festival is a vibrant and significant cultural tradition in Igboland, including Enugu, Nigeria, renowned for its elaborate and captivating masquerade displays. This lively event serves as a vital time for community gathering, entertainment, and a profound connection to ancestral spirits.",
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Key Features:",
       },
       {
@@ -52,7 +52,7 @@ const data: {
           "Annually in August, the Osun-Osogbo Sacred Grove in Osogbo comes alive for a vibrant two-week festival dedicated to Osun, the revered Yoruba goddess of water, fertility, and beauty. This major cultural and religious event draws thousands of pilgrims and tourists globally to honor the goddess and seek her blessings.",
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Key Highlights:",
       },
       {
@@ -66,7 +66,7 @@ const data: {
         ],
       },
       {
-        type: "h3",
+        type: "strong",
         content: "A Legacy of Over 700 Years:",
       },
       {
@@ -75,7 +75,7 @@ const data: {
           "Legend speaks of the festival's origins over seven centuries ago, linked to the establishment of a settlement along the banks of the Osun River. This enduring tradition renews the sacred bond between humanity and the divine, with Osun bestowing her grace upon the community in exchange for their devotion to her sacred grove.",
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Witness Powerful Rituals and Celebrations:",
       },
       {
@@ -134,7 +134,7 @@ const data: {
           "The Igue Festival is a paramount cultural event for the Edo people of the revered Benin Kingdom, predominantly celebrated in December, aligning with the Christmas and New Year period. This significant festival serves as a time for profound thanksgiving and spiritual renewal, where the Oba (king) and his people collectively commemorate the blessings of the past year and look forward with hope to the future. The festival is characterized by a series of sacred ceremonies, age-old rituals, and significant rites aimed at purifying and fortifying both the king and the entire kingdom.",
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Key Aspects:",
       },
       {
@@ -146,7 +146,7 @@ const data: {
         ],
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Sacred Ceremonies and Time-Honored Rituals:",
       },
       {
@@ -160,7 +160,7 @@ const data: {
         ],
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Timing of the Celebration:",
       },
       {
@@ -169,7 +169,7 @@ const data: {
           "The Igue Festival is traditionally celebrated in the month of December, often harmoniously coinciding with the widely observed Christmas and New Year festive season.",
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Central Figures of the Festival:",
       },
       {
@@ -207,7 +207,7 @@ const data: {
           "Felabration is Lagos' annual, vibrant music festival dedicated to honoring the life, music, and powerful legacy of the iconic Nigerian musician and social activist, Fela Anikulapo Kuti. Envisioned by his daughter, Yeni Anikulapo-Kuti, in 1998, this dynamic event takes place at the legendary New Afrika Shrine, drawing thousands of fans each year.",
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Experience the Spirit of Fela:",
       },
       {
@@ -281,7 +281,7 @@ const data: {
         content: "Calabar Carnival",
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Africa's Biggest Street Party!",
       },
       {
@@ -290,7 +290,7 @@ const data: {
           'Get ready for a month-long explosion of color, energy, and Nigerian culture! The Calabar Carnival, held annually throughout December in Cross River State, is a globally renowned spectacle, drawing massive crowds and earning its title as "Africa\'s Biggest Street Party."',
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Experience the Thrill:",
       },
       {
@@ -322,7 +322,7 @@ const data: {
         content: "Badagry Festival",
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Remembering the Past, Celebrating African Heritage",
       },
       {
@@ -331,7 +331,7 @@ const data: {
           "The Badagry Festival is an annual cultural event in Badagry, Lagos State, organized by the African Renaissance Foundation (AREFO). This significant festival honors Badagry's poignant history as a key port during the Transatlantic slave trade and stands as a powerful celebration of African heritage, culture, and the triumph over slavery.",
       },
       {
-        type: "h3",
+        type: "strong",
         content: "Key Features:",
       },
       {

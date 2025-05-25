@@ -7,7 +7,13 @@ interface ParsedElement {
   content: string | string[];
 }
 
-function FestivalContent({ data }: { data: ParsedElement[] }) {
+function FestivalContent({
+  data,
+  standalone,
+}: {
+  data: ParsedElement[];
+  standalone?: boolean;
+}) {
   const [expanded, setExpanded] = useState(false);
 
   // Find the index of the first paragraph
@@ -21,10 +27,15 @@ function FestivalContent({ data }: { data: ParsedElement[] }) {
 
   return (
     <div className="px-2 justify-content-center align-items-center text-center">
+      {!standalone && <h2 className="grid_cat">Festival Highlights</h2>}
       {before.map((item, index) => {
         switch (item.type) {
           case "h2":
-            return <h2 key={index}>{item.content}</h2>;
+            return (
+              <h2 key={index} className="fw-light">
+                {item.content}
+              </h2>
+            );
           case "strong":
             return <strong key={index}>{item.content}</strong>;
           case "h3":
