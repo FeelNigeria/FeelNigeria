@@ -53,7 +53,7 @@ export default function CarouselFade({ standalone }: Props) {
       {data.map(({ filename, title, description }, idx) => (
         <GridItem key={idx}>
           {imageJsx(title, filename)}
-          <TextToContent data={description} />
+          <TextToContent data={description} standalone={standalone} />
         </GridItem>
       ))}
     </Grid>
