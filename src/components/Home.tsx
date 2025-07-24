@@ -3,6 +3,7 @@ import TourBooking from "./TourBooking";
 import PopularDestination from "./Destination/PopularDestination";
 import TourismSection from "./TourismSection";
 import FestivalGrid from "./Festival/FestivalGrid";
+import TourGuideCallToAction from "./TourGuideCallToAction";
 
 // const heroSlides = [
 //   {
@@ -38,6 +39,7 @@ const Home = () => {
       <TourismSection />
       <PopularDestination />
       <FestivalGrid />
+      <TourGuideCallToAction />
       <TourBooking />
       {/* Uncomment the line below to include the TravelGuide component */}
       {/* <TravelGuide /> */}

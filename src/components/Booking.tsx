@@ -145,7 +145,6 @@ const NavbarHero: React.FC = () => (
                 "Our Gallery",
                 "Travel Guides",
                 "Testimonial",
-                "404 Page",
               ].map((page) => (
                 <li key={page}>
                   <a

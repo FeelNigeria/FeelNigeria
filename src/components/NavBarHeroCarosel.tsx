@@ -64,9 +64,6 @@ const NavBarHeroCarousel = () => {
                 <a href="testimonial.html" className="dropdown-item">
                   Testimonial
                 </a>
-                <a href="404.html" className="dropdown-item">
-                  404 Page
-                </a>
               </div>
             </div>
             <a href="contact.html" className="nav-item nav-link">

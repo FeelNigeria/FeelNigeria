@@ -12,6 +12,7 @@ import Package from "./components/Packages/Package";
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import RegistrationForm from "./components/RegistrationForm";
+import TourGuideRegistrationForm from "./components/TourGuideRegistrationForm";
 import LoginForm from "./components/LoginForm";
 import TravelSearch from "./components/Sabre/TravelSearch";
 import FestivalGrid from "./components/Festival/FestivalGrid";
@@ -31,7 +32,6 @@ const navLinks = [
       { title: "Our Gallery", href: "/gallery" },
       { title: "Travel Guides", href: "/guides" },
       { title: "Testimonial", href: "/testimonial" },
-      { title: "404 Page", href: "/404" },
     ],
   },
   { title: "Contact", href: "/contact" },
@@ -80,6 +80,10 @@ const App: React.FC = () => {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/registration" element={<RegistrationForm />} />
         <Route path="/login" element={<LoginForm />} />
+        <Route
+          path="/register-tour-guide"
+          element={<TourGuideRegistrationForm />}
+        />
       </Routes>
       <Subscribe />
       <Footer />
