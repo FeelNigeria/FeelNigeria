@@ -59,6 +59,10 @@ const App: React.FC = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+    document.title = "Feel Nigeria";
+  }, []);
+
   return (
     <>
       {/* {!isMobileView && <TopBar />} */}
