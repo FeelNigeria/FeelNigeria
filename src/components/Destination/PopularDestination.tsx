@@ -26,8 +26,7 @@ const images = [
   {
     src: 4,
     title: "La Campagne Tropicana",
-    description:
-      "Located in Cross River State, Nigeria, offers breathtaking views from the Obudu Plateau. A scenic cable car ride, introduced in 2005, spans 870 meters (2,850 ft), providing a stunning perspective while bypassing the winding road to the top",
+    description: `Escape African-themed paradise, where 65 acres of pristine palm-fringed beach, lush mangrove forest, and winding rivers await. The resort, nestled in the heart of Ibeju Lekki, Lagos, Nigeria, offers a tranquil retreat for nature lovers and adventure seekers alike. Explore the diverse ecosystem, teeming with exotic plants and animals, including monkeys, squirrels, mudskippers, and a variety of bird species.`,
   },
   {
     src: 6,
@@ -72,7 +71,7 @@ export default function CarouselFade() {
     : "80vh";
 
   return (
-    <OwlCarousel {...carouselOptions}  className="owl-carousel bg-light">
+    <OwlCarousel {...carouselOptions} className="owl-carousel bg-light">
       {images.map(({ src, title, description }, idx) => (
         <SimpleGrid
           templateRows="repeat(1, 1fr)"
