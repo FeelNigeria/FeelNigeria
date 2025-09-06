@@ -4,6 +4,7 @@ import PopularDestination from "./Destination/PopularDestination";
 import TourismSection from "./TourismSection";
 import FestivalGrid from "./Festival/FestivalGrid";
 import TourGuideCallToAction from "./TourGuideCallToAction";
+import ZipCashSection from "./ZipCashSection";
 
 // const heroSlides = [
 //   {
@@ -38,6 +39,7 @@ const Home = () => {
       <HeroCarousel />
       <TourismSection />
       <PopularDestination />
+      <ZipCashSection />
       <FestivalGrid />
       <TourGuideCallToAction />
       <TourBooking />
