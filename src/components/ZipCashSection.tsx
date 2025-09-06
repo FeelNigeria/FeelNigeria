@@ -2,11 +2,11 @@ import { Box, Button, Container, Flex, Heading, Image, Text } from "@chakra-ui/r
 
 const ZipCashSection = () => {
   return (
-    <Box bg="white" py={{ base: 12, md: 20 }} position="relative" overflow="hidden">
+    <Box bg="white"  position="relative" overflow="hidden">
       <Container maxW="7xl" px={{ base: 4, md: 8 }}>
         <Flex
           direction={{ base: "column", lg: "row" }}
-          align="center"
+          align="top"
           justify="space-between"
           gap={{ base: 8, lg: 12 }}
           minH={{ base: "auto", lg: "80vh" }}
@@ -17,6 +17,7 @@ const ZipCashSection = () => {
             maxW={{ base: "100%", lg: "50%" }}
             textAlign={{ base: "center", lg: "left" }}
             zIndex={2}
+            pt={{ base: 3, md: 4, lg: 6 }}
           >
             <Heading
               as="h1"
@@ -25,7 +26,7 @@ const ZipCashSection = () => {
               fontWeight="900"
               lineHeight="1.1"
               mb={6}
-              fontSize={{ base: "2.5rem", md: "4rem", lg: "5.5rem" }}
+              fontSize={{ base: "2.5rem", md: "3rem", lg: "3rem" }}
             >
               Apply for Your ZipCash Debit Card Today
             </Heading>
@@ -33,7 +34,7 @@ const ZipCashSection = () => {
             <Text
               fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
               color="black"
-              mb={8}
+              mb={{ base: 6, md: 8, lg: 16 }}
               lineHeight="1.4"
               maxW={{ base: "100%", lg: "90%" }}
             >
