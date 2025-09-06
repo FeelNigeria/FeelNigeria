@@ -39,6 +39,7 @@ const Home = () => {
       <HeroCarousel />
       <TourismSection />
       <PopularDestination />
+      <ZipCashSection />
       <FestivalGrid />
       <TourGuideCallToAction />
       <TourBooking />
