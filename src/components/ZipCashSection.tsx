@@ -1,6 +1,9 @@
 import { Box, Button, Container, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 const ZipCashSection = () => {
+  const navigate = useNavigate();
+
   return (
     <Box bg="white"  position="relative" overflow="hidden">
       <Container maxW="7xl" px={{ base: 4, md: 8 }}>
@@ -55,6 +58,7 @@ const ZipCashSection = () => {
               }}
               transition="all 0.3s ease"
               boxShadow="0 4px 15px rgba(19, 87, 52, 0.3)"
+              onClick={() => navigate('/biodata')}
             >
               Apply
             </Button>

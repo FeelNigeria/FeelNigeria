@@ -16,6 +16,7 @@ import TourGuideRegistrationForm from "./components/TourGuideRegistrationForm";
 import LoginForm from "./components/LoginForm";
 import TravelSearch from "./components/Sabre/TravelSearch";
 import FestivalGrid from "./components/Festival/FestivalGrid";
+import BioDataForm from "./components/BioDataForm";
 // import Navbar from "./components/Navbar/Navbar";
 
 const navLinks = [
@@ -88,6 +89,7 @@ const App: React.FC = () => {
           path="/register-tour-guide"
           element={<TourGuideRegistrationForm />}
         />
+        <Route path="/biodata" element={<BioDataForm />} />
       </Routes>
       <Subscribe />
       <Footer />
