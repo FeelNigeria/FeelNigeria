@@ -16,7 +16,12 @@ import TourGuideRegistrationForm from "./components/TourGuideRegistrationForm";
 import LoginForm from "./components/LoginForm";
 import TravelSearch from "./components/Sabre/TravelSearch";
 import FestivalGrid from "./components/Festival/FestivalGrid";
-import BioDataForm from "./components/BioDataForm";
+import BioDataForm from "./components/ZipCashFunding/BioDataForm";
+import TokenForm from "./components/ZipCashFunding/TokenForm";
+import FundForm from "./components/ZipCashFunding/FundForm";
+import PaymentMethod from "./components/ZipCashFunding/PaymentMethod";
+import ProcessingOverlay from "./components/ZipCashFunding/ProcessingOverlay";
+import ZipCashOnboarding from "./components/ZipCashFunding/ZipCashOnboarding";
 // import Navbar from "./components/Navbar/Navbar";
 
 const navLinks = [
@@ -89,7 +94,11 @@ const App: React.FC = () => {
           path="/register-tour-guide"
           element={<TourGuideRegistrationForm />}
         />
-        <Route path="/biodata" element={<BioDataForm />} />
+        <Route path="/biodata" element={<ZipCashOnboarding />} />
+        {/* <Route path="/token" element={<TokenForm />} />
+        <Route path="/fund" element={<FundForm />} />
+        <Route path="/payment" element={<PaymentMethod />} /> */}
+        {/* <Route path="/processing" element={<ProcessingOverlay />} /> */}
       </Routes>
       <Subscribe />
       <Footer />

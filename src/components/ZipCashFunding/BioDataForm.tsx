@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+// import { useNavigate } from "react-router-dom";
 
-const BioDataForm: React.FC = () => {
+interface BioDataStepProps {
+  onNext: () => void;
+}
+
+
+const BioDataForm = ({onNext}: BioDataStepProps) => {
   const [formData, setFormData] = useState({
     name: "",
     dob: "",
@@ -25,29 +31,18 @@ const BioDataForm: React.FC = () => {
     }));
   };
 
+  // const navigate = useNavigate();
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Form submitted! Check console for data.");
+    // navigate("/token");
+    onNext();
   };
 
   return (
     <div className="biodata-form-container">
       <main className="main-content">
-        {/* Progress Tracker */}
-        <div className="progress-tracker">
-          {[...Array(8)].map((_, index) => (
-            <React.Fragment key={index}>
-              <div className={`progress-circle ${index === 0 ? "active" : ""}`}>
-                <div className="circle-inner" />
-              </div>
-              {index < 7 && <div className={`progress-line ${index === 0 ? "active" : ""}`} />}
-            </React.Fragment>
-          ))}
-        </div>
-
         <h1 className="form-title">Enter your bio-data</h1>
-
         <div className="form-container">
           <form onSubmit={handleSubmit} className="biodata-form">
             <div className="form-grid">
