@@ -1276,10 +1276,10 @@ body {
 
 
 .biodata-form-container {
-  min-height: 80vh;
-  background-image: url('https://api.builder.io/api/v1/image/assets/TEMP/c11d3c9560cbf956c28c414aaa9625963a83c2ff?width=5952');
-  background-size: cover;
-  background-position: center;
+  min-height: 100vh;
+  background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/c11d3c9560cbf956c28c414aaa9625963a83c2ff');
+  background-size: contain;
+  background-position: right center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -1300,7 +1300,7 @@ body {
   z-index: 2;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 60px 60px;
+  padding: 10px 60px 60px 60px;
 }
 
 .progress-tracker {
@@ -1335,7 +1335,7 @@ body {
 }
 
 .progress-line {
-  width: 10vw;
+  width: 9vw;
   height: 2px;
   background-color: #135734;
 }
@@ -1498,7 +1498,7 @@ body {
   border: none;
   color: white;
   font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s;
