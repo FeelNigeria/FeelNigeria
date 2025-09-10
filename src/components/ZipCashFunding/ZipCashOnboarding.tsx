@@ -3,8 +3,9 @@ import ProgressBar from "./ProgressBar";
 import BioDataStep from "./BioDataForm";
 import TokenStep from "./TokenForm";
 import FundAccountStep from "./FundForm";
-import PaymentMethodStep from "./PaymentMethod";
+import ZipCashCardRequest from "./ZipCashCardRequest";
 import nigeriaMapBg from "@/assets/img/nigeria-map-bg.png";
+import ZipCardFund from "./ZipCardFund";
 
 interface StepComponentProps {
   onNext: () => void;
@@ -12,8 +13,15 @@ interface StepComponentProps {
 
 const ZipCashOnboarding = () => {
   const [currentStep, setCurrentStep] = useState<number>(0);
-  const totalSteps = 4; // Updated to match active steps
-
+  const steps: Array<React.ComponentType<StepComponentProps>> = [
+    BioDataStep,
+    TokenStep,
+    FundAccountStep,
+    ZipCashCardRequest,
+    ZipCardFund
+  ];
+  const totalSteps = steps.length;
+  
   const nextStep = () => {
     if (currentStep < totalSteps - 1) {
       setCurrentStep(currentStep + 1);
@@ -25,13 +33,6 @@ const ZipCashOnboarding = () => {
     console.log("Onboarding completed!");
   };
 
-  // Define steps as an array for better maintainability and readability
-  const steps: Array<React.ComponentType<StepComponentProps>> = [
-    BioDataStep,
-    TokenStep,
-    FundAccountStep,
-    PaymentMethodStep,
-  ];
 
   const renderStep = () => {
     const StepComponent = steps[currentStep];
@@ -58,7 +59,7 @@ const ZipCashOnboarding = () => {
       />
 
       <div className="relative z-10 min-h-screen flex flex-col">
-        <div className="container mx-auto px-4  flex-1">
+        <div className=" mx-auto px-4  flex-1">
           <ProgressBar currentStep={currentStep} />
 
           <div className="max-w-5xl">
