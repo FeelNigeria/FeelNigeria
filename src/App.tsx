@@ -16,11 +16,6 @@ import TourGuideRegistrationForm from "./components/TourGuideRegistrationForm";
 import LoginForm from "./components/LoginForm";
 import TravelSearch from "./components/Sabre/TravelSearch";
 import FestivalGrid from "./components/Festival/FestivalGrid";
-import BioDataForm from "./components/ZipCashFunding/BioDataForm";
-import TokenForm from "./components/ZipCashFunding/TokenForm";
-import FundForm from "./components/ZipCashFunding/FundForm";
-import PaymentMethod from "./components/ZipCashFunding/PaymentMethod";
-import ProcessingOverlay from "./components/ZipCashFunding/ProcessingOverlay";
 import ZipCashOnboarding from "./components/ZipCashFunding/ZipCashOnboarding";
 // import Navbar from "./components/Navbar/Navbar";
 

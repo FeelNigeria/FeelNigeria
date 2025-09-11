@@ -2769,3 +2769,147 @@ body {
     border-radius: 28px;
   }
 }
+
+/* ZipCash Completion Styles */
+.completion-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 60vh;
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.completion-message {
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.completion-title {
+  color: #135734;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  text-align: left;
+}
+
+.completion-decoration {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.25; /* toned down */
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.completion-circle {
+  width: clamp(180px, 20vw, 320px);
+  height: clamp(180px, 20vw, 320px);
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(28, 99, 72, 0.14) 0%, rgba(28, 99, 72, 0.09) 40%, rgba(28, 99, 72, 0.04) 70%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: none; /* remove border */
+  transform: rotate(-3deg);
+  box-shadow: none; /* remove heavy shadow */
+}
+
+.completion-circle::before {
+  content: '';
+  position: absolute;
+  width: 84%;
+  height: 84%;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.completion-checkmark {
+  width: 60%;
+  height: 60%;
+  z-index: 2;
+  filter: drop-shadow(0 6px 12px rgba(28, 99, 72, 0.18));
+  transform: translateY(-2%);
+}
+
+/* remove pulse animation to make decoration subtle */
+
+.completion-finish-button {
+  background: #135734;
+  color: #fff;
+  font-weight: 500;
+}
+
+.completion-finish-button:hover:not(:disabled) {
+  background: #1c6348;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design for Completion */
+@media (max-width: 1024px) {
+  .completion-content {
+    min-height: 50vh;
+  }
+
+  .completion-decoration {
+    right: -100px;
+    opacity: 0.1;
+  }
+
+  .completion-circle {
+    width: clamp(150px, 20vw, 300px);
+    height: clamp(150px, 20vw, 300px);
+  }
+}
+
+@media (max-width: 768px) {
+  .completion-content {
+    align-items: center;
+    text-align: center;
+    min-height: 40vh;
+  }
+
+  .completion-title {
+    text-align: center;
+  }
+
+  .completion-decoration {
+    position: static;
+    transform: none;
+    margin-top: 40px;
+    opacity: 0.2;
+  }
+
+  .completion-circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .completion-content {
+    min-height: 35vh;
+  }
+
+  .completion-message {
+    margin-bottom: 30px;
+  }
+
+  .completion-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .completion-checkmark {
+    width: 50%;
+    height: 50%;
+  }
+}
