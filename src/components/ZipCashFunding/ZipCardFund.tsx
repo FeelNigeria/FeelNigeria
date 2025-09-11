@@ -1,10 +1,10 @@
 import React from "react";
 
-interface ZipCashCardRequestProps {
+interface ZipCardFundProps {
   onNext: () => void;
 }
 
-const ZipCashCardRequest: React.FC<ZipCashCardRequestProps> = ({ onNext }) => {
+const ZipCardFund: React.FC<ZipCardFundProps> = ({ onNext }) => {
   const handleRequest = () => {
     // Handle the card request logic here
     console.log("ZipCash card requested");
@@ -159,4 +159,4 @@ const ZipCashCardRequest: React.FC<ZipCashCardRequestProps> = ({ onNext }) => {
   );
 };
 
-export default ZipCashCardRequest;
+export default ZipCardFund;
