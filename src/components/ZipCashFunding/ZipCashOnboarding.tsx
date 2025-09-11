@@ -4,8 +4,10 @@ import BioDataStep from "./BioDataForm";
 import TokenStep from "./TokenForm";
 import FundAccountStep from "./FundForm";
 import ZipCashCardRequest from "./ZipCashCardRequest";
+import PinConfiguration from "./PinConfiguration";
 import nigeriaMapBg from "@/assets/img/nigeria-map-bg.png";
 import ZipCardFund from "./ZipCardFund";
+import ServiceProviderSelect from "./ServiceProviderSelect";
 
 interface StepComponentProps {
   onNext: () => void;
@@ -18,7 +20,9 @@ const ZipCashOnboarding = () => {
     TokenStep,
     FundAccountStep,
     ZipCashCardRequest,
-    ZipCardFund
+    ZipCardFund,
+    ServiceProviderSelect,
+    PinConfiguration,
   ];
   const totalSteps = steps.length;
   
