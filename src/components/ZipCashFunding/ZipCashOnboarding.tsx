@@ -5,6 +5,7 @@ import TokenStep from "./TokenForm";
 import FundAccountStep from "./FundForm";
 import ZipCashCardRequest from "./ZipCashCardRequest";
 import PinConfiguration from "./PinConfiguration";
+import ZipCashCompletion from "./ZipCashCompletion";
 import nigeriaMapBg from "@/assets/img/nigeria-map-bg.png";
 import ZipCardFund from "./ZipCardFund";
 import ServiceProviderSelect from "./ServiceProviderSelect";
@@ -23,6 +24,7 @@ const ZipCashOnboarding = () => {
     ZipCardFund,
     ServiceProviderSelect,
     PinConfiguration,
+    ZipCashCompletion
   ];
   const totalSteps = steps.length;
   
@@ -32,10 +34,10 @@ const ZipCashOnboarding = () => {
     }
   };
 
-  const finish = () => {
-    // Handle completion - could be enhanced with proper state management
-    console.log("Onboarding completed!");
-  };
+  // const finish = () => {
+  //   // Handle completion - could be enhanced with proper state management
+  //   console.log("Onboarding completed!");
+  // };
 
 
   const renderStep = () => {
