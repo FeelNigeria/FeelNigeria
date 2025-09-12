@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 // import { useNavigate } from "react-router-dom";
+import ZipCashBack from "./ZipCashBack";
 
 interface BioDataStepProps {
   onNext: () => void;
+  onBack: () => void;
 }
 
 
-const BioDataForm = ({onNext}: BioDataStepProps) => {
+const BioDataForm = ({onNext, onBack}: BioDataStepProps) => {
   const [formData, setFormData] = useState({
     name: "",
     dob: "",
@@ -137,7 +139,10 @@ const BioDataForm = ({onNext}: BioDataStepProps) => {
               </div>
             </div>
 
-            <div className="button-container">
+            <div className="button-container" style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <ZipCashBack onClick={onBack}>
+                Back
+              </ZipCashBack>
               <button type="submit" className="continue-button">
                 Continue
               </button>

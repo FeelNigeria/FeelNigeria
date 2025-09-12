@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ProgressBar from "./ProgressBar";
 import BioDataStep from "./BioDataForm";
 import TokenStep from "./TokenForm";
@@ -12,6 +13,7 @@ import ServiceProviderSelect from "./ServiceProviderSelect";
 
 interface StepComponentProps {
   onNext: () => void;
+  onBack: () => void;
 }
 
 const ZipCashOnboarding = () => {
@@ -27,10 +29,21 @@ const ZipCashOnboarding = () => {
     ZipCashCompletion
   ];
   const totalSteps = steps.length;
+  const navigate = useNavigate();
   
   const nextStep = () => {
     if (currentStep < totalSteps - 1) {
       setCurrentStep(currentStep + 1);
+    }
+  };
+
+  const backStep = () => {
+    if (currentStep === 0)  {
+      navigate(-1);
+      return;
+    }
+    if (currentStep > 0) {
+      setCurrentStep(currentStep - 1);
     }
   };
 
@@ -43,7 +56,7 @@ const ZipCashOnboarding = () => {
   const renderStep = () => {
     const StepComponent = steps[currentStep];
     if (StepComponent) {
-      return <StepComponent onNext={nextStep} />;
+      return <StepComponent onNext={nextStep} onBack={backStep} />;
     }
     // Error handling: return a fallback for invalid steps
     return (

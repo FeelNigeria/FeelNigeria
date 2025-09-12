@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import ZipCashBack from "./ZipCashBack";
 
 interface BioDataStepProps {
   onNext: () => void;
+  onBack: () => void;
 }
 
-const TokenForm = ({onNext}: BioDataStepProps) => {
+const TokenForm = ({onNext, onBack}: BioDataStepProps) => {
   const [formData, setFormData] = useState({
     name: "",
     token: "",
@@ -68,7 +70,10 @@ const TokenForm = ({onNext}: BioDataStepProps) => {
               </div>
             </div>
 
-            <div className="button-container">
+            <div className="button-container" style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <ZipCashBack onClick={onBack}>
+                Back
+              </ZipCashBack>
               <button type="submit" className="continue-button">
                 Continue
               </button>
