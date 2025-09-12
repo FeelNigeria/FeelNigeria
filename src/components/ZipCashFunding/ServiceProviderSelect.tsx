@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import ZipCashBack from "./ZipCashBack";
 
 interface ZipCashCardRequestProps {
   onNext: () => void;
+  onBack: () => void;
 }
 
-const ServiceProviderSelect = ({ onNext }: ZipCashCardRequestProps) => {
+const ServiceProviderSelect = ({ onNext, onBack }: ZipCashCardRequestProps) => {
   const [selectedProvider, setSelectedProvider] = useState<string>("");
 
   const handleProviderSelect = (provider: string) => {
@@ -63,9 +65,12 @@ const ServiceProviderSelect = ({ onNext }: ZipCashCardRequestProps) => {
                 </div>
               </div>
               
-              <div className="button-container">
-                <button 
-                  type="submit" 
+              <div className="button-container" style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <ZipCashBack onClick={onBack}>
+                  Back
+                </ZipCashBack>
+                <button
+                  type="submit"
                   className="continue-button"
                   disabled={!selectedProvider}
                 >

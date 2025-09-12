@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import ZipCashBack from "./ZipCashBack";
 
 interface PinConfigurationProps {
   onNext: () => void;
+  onBack: () => void;
 }
 
-const PinConfiguration = ({ onNext }: PinConfigurationProps) => {
+const PinConfiguration = ({ onNext, onBack }: PinConfigurationProps) => {
   const [formData, setFormData] = useState({
     pin: "",
     confirmPin: "",
@@ -118,7 +120,10 @@ const PinConfiguration = ({ onNext }: PinConfigurationProps) => {
       </main>
 
       {/* Fixed continue button positioned at bottom-right of the page */}
-      <div className="component-continue-container">
+      <div className="component-continue-container" style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <ZipCashBack onClick={onBack}>
+          Back
+        </ZipCashBack>
         <button
           type="button"
           className="component-continue-button"

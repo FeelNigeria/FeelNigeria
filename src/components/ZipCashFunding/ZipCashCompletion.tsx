@@ -1,10 +1,12 @@
 import { useNavigate } from "react-router-dom";
+import ZipCashBack from "./ZipCashBack";
 
 interface ZipCashCompletionProps {
   onNext: () => void;
+  onBack: () => void;
 }
 
-const ZipCashCompletion = ({ onNext }: ZipCashCompletionProps) => {
+const ZipCashCompletion = ({ onNext, onBack }: ZipCashCompletionProps) => {
   const navigate = useNavigate();
 
   const handleFinish = () => {
@@ -49,7 +51,10 @@ const ZipCashCompletion = ({ onNext }: ZipCashCompletionProps) => {
       </main>
 
       {/* Component-local finish button positioned at bottom-right */}
-      <div className="component-continue-container">
+      <div className="component-continue-container" style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <ZipCashBack onClick={onBack}>
+          Back
+        </ZipCashBack>
         <button
           type="button"
           className="component-continue-button completion-finish-button"

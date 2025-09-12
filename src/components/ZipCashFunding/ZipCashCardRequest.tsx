@@ -1,10 +1,12 @@
 import React from "react";
+import ZipCashBack from "./ZipCashBack";
 
 interface ZipCashCardRequestProps {
   onNext: () => void;
+  onBack: () => void;
 }
 
-const ZipCashCardRequest: React.FC<ZipCashCardRequestProps> = ({ onNext }) => {
+const ZipCashCardRequest: React.FC<ZipCashCardRequestProps> = ({ onNext, onBack }) => {
   const handleRequest = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle the card request logic here
@@ -129,10 +131,13 @@ const ZipCashCardRequest: React.FC<ZipCashCardRequestProps> = ({ onNext }) => {
             </div>
 
             {/* Button Section */}
-            <div style={{ textAlign: 'right', marginBottom: '1rem' }}>
-              <button 
-                type="button" 
-                onClick={handleRequest} 
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
+              <ZipCashBack onClick={onBack}>
+                Back
+              </ZipCashBack>
+              <button
+                type="button"
+                onClick={handleRequest}
                 className="continue-button"
               >
                 Request
