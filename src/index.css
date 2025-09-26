@@ -1,0 +1,82 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.centered-caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.destination-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.destination-img img {
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+/* Zoom image on hover */
+.destination-img:hover img {
+  transform: scale(1.1);
+  filter: brightness(50%);
+}
+
+.destination-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.destination-img:hover .destination-overlay {
+  opacity: 1;
+  transform: translateY(0);
+  /* background: rgba(0, 0, 0, 0.7); deeper background */
+}
+
+.search-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none; /* Hidden by default */
+  z-index: 2;
+}
+
+/* Show it when image is hovered */
+.destination-img:hover .search-icon {
+  display: block;
+}
+
+@media (max-width: 740px) {
+  .grid_cat {
+    font-size: 15px;
+  }
+}
+
+.carousel_cont_hei {
+  display: block;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+/* .carousel_cont {
+  text-align: center;
+} */
