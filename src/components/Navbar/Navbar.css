@@ -1,0 +1,43 @@
+/* Base navbar: sits over the video with semi-transparent light-gray */
+.navbar {
+  position: absolute; /* Overlay the video */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: transparent; /* Semi-transparent light gray */
+  color: white; /* White text when at top */
+  z-index: 1000;
+  font-size: 17px;
+  font-weight: 400;
+  transition: background-color 0.4s ease, /* Smooth fade */ color 0.4s ease,
+    /* Text color fade */ transform 0.3s ease; /* Slide animations */
+  transform: translateY(0);
+}
+
+/* On scroll: fix to top, solidify background, switch text to Bootstrap success green */
+.navbar.scrolled {
+  position: fixed; /* Pin in viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(248, 249, 250, 0.95); /* Nearly opaque light gray */
+  color: var(
+    --bs-success,
+    #198754
+  ); /* Bootstrap “success” green fallback #198754 */
+  transform: translateY(-100%); /* Start hidden */
+}
+
+/* Slide the fixed navbar into view */
+.navbar.scrolled.show {
+  transform: translateY(0);
+}
+
+/* Ensure links inherit text color */
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.4s ease;
+}
