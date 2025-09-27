@@ -1,18 +1,19 @@
+
 import { Box, Button, Container, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import CardImage from "../assets/img/hue-card.png";
-import Premium from "../assets/img/PremiumTrustBank.png" // ✅ your uploaded card image
+import Premium from "../assets/img/PremiumTrustBank.png"
 
 const ZipCashSection = () => {
   const navigate = useNavigate();
 
   return (
     <Box 
-      bg="linear-gradient(135deg, #0077b6 0%, #00b4d8 100%)" 
+      bg="white" 
       position="relative" 
       overflow="hidden"
       fontFamily='"Poppins", "Inter", sans-serif'
-      color="white"
+      color="black"
     >
       <Container maxW="7xl" px={{ base: 4, md: 8 }}>
         <Flex
@@ -33,37 +34,39 @@ const ZipCashSection = () => {
             <Heading
               as="h1"
               size={{ base: "xl", md: "2xl", lg: "3xl" }}
-              fontWeight="800"
-              lineHeight="1.2"
+              color="#0077B6" // ✅ synced blue from card
+              fontWeight="900"
+              lineHeight="1.1"
               mb={6}
+              fontSize={{ base: "2.5rem", md: "3rem", lg: "3rem" }}
             >
               Apply for Your ZipCash Debit Card Today
             </Heading>
 
             <Text
               fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
-              color="whiteAlpha.900"
+              color="black"
               mb={{ base: 6, md: 8, lg: 16 }}
-              lineHeight="1.5"
+              lineHeight="1.4"
               maxW={{ base: "100%", lg: "90%" }}
             >
               Experience the security and convenience of having a debit card made for Nigerians.
             </Text>
 
             <Button
-              bg="white"
-              color="#0077b6"
+              bg="#0077B6" // ✅ blue button
+              color="white"
               size="lg"
               px={12}
               py={6}
               fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
-              borderRadius="50px"
+              borderRadius="60px"
               _hover={{
-                bg: "whiteAlpha.900",
+                bg: "#005F8C", // ✅ darker hover
                 transform: "translateY(-2px)",
               }}
               transition="all 0.3s ease"
-              boxShadow="0 6px 20px rgba(0, 0, 0, 0.25)"
+              boxShadow="0 4px 15px rgba(0, 119, 182, 0.3)"
               onClick={() => navigate('/biodata')}
             >
               Apply
