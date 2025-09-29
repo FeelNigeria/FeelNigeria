@@ -1,19 +1,28 @@
 from django.core.mail import send_mail
-from django.conf.global_settings import EMAIL_HOST_USER
-from . models import Profile
+from django.conf import settings  # use settings instead of global_settings
 
-def sendMail(email):
-    subject = f"I welcome you to the Feel Nigeria Initiative"
+def sendMail(to_email, username, activation_link):
+    subject = "Verify Your Email Address"
     message = f"""
-                {Profile.full_name}Thanks for registering unnder the feel Nigeria Initiative.
-                welcome!!! I would love to hear from you.
-                
-                """
+    Hi {username},
+
+    Thanks for signing up with FeelNigeria! 
+    Please verify your email address by clicking the link below:
+
+    {activation_link}
+
+    If you didn't create this account, please ignore this email.
+
+    Best regards,
+    The FeelNigeria Team
+    """
+
     send_mail(
         subject,
         message,
-        EMAIL_HOST_USER,
-        [email],
-        fail_silently=False)
-    
+        settings.EMAIL_HOST_USER,  # sender
+        [to_email],                # recipient must be in a list
+        fail_silently=False
+    )
+
 
