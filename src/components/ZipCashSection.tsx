@@ -100,7 +100,7 @@ const ZipCashSection = () => {
               boxShadow="0 4px 15px rgba(0, 119, 182, 0.3)"
               onClick={() => navigate("/biodata")}
             >
-              Apply
+              
             </Button>
           </Box>
 
