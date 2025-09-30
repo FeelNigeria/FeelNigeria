@@ -1,16 +1,24 @@
-
-import { Box, Button, Container, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Heading,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import CardImage from "../assets/img/hue-card.png";
-import Premium from "../assets/img/PremiumTrustBank.png"
+import CardImage from "../assets/img/zipcashcard.jpg";
+import Premium from "../assets/img/PremiumTrustBank.png";
+import NiDCOM from "../assets/img/NiDCOM.png";
 
 const ZipCashSection = () => {
   const navigate = useNavigate();
 
   return (
-    <Box 
-      bg="white" 
-      position="relative" 
+    <Box
+      bg="white"
+      position="relative"
       overflow="hidden"
       fontFamily='"Poppins", "Inter", sans-serif'
       color="black"
@@ -34,7 +42,7 @@ const ZipCashSection = () => {
             <Heading
               as="h1"
               size={{ base: "xl", md: "2xl", lg: "3xl" }}
-              color="#0077B6" // ✅ synced blue from card
+              color="#2A653F" // ✅ synced blue from card
               fontWeight="900"
               lineHeight="1.1"
               mb={6}
@@ -50,11 +58,12 @@ const ZipCashSection = () => {
               lineHeight="1.4"
               maxW={{ base: "100%", lg: "90%" }}
             >
-              Experience the security and convenience of having a debit card made for Nigerians.
+              Experience the security and convenience of having a debit card
+              made for Nigerians.
             </Text>
 
             <Button
-              bg="#0077B6" // ✅ blue button
+              bg="#2A653F" // ✅ blue button
               color="white"
               size="lg"
               px={12}
@@ -62,12 +71,12 @@ const ZipCashSection = () => {
               fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
               borderRadius="60px"
               _hover={{
-                bg: "#005F8C", // ✅ darker hover
+                bg: "#2A653F", // ✅ darker hover
                 transform: "translateY(-2px)",
               }}
               transition="all 0.3s ease"
               boxShadow="0 4px 15px rgba(0, 119, 182, 0.3)"
-              onClick={() => navigate('/biodata')}
+              onClick={() => navigate("/biodata")}
             >
               Apply
             </Button>
@@ -87,62 +96,72 @@ const ZipCashSection = () => {
               transform={{ base: "rotate(3deg)", lg: "rotate(6deg)" }}
               transition="transform 0.3s ease"
               _hover={{
-                transform: { base: "rotate(1deg) scale(1.02)", lg: "rotate(4deg) scale(1.02)" }
+                transform: {
+                  base: "rotate(1deg) scale(1.02)",
+                  lg: "rotate(4deg) scale(1.02)",
+                },
               }}
             >
               <Image
+                mt={16}
+                bg="white"
                 src={CardImage}
                 alt="ZipCash Debit Card"
-                w={{ base: "280px", md: "400px", lg: "520px" }}
-                h="auto"
+                maxH={{ base: "240px", md: "340px", lg: "460px" }} // ⬅ caps height
+                w="auto"
                 borderRadius="20px"
-                boxShadow="0 20px 50px rgba(0,0,0,0.4)"
               />
             </Box>
           </Box>
         </Flex>
       </Container>
-
       {/* Footer Section */}
-      <Box bg="rgba(0, 173, 198, 1)" py={8} mt={16}>
-        <Container maxW="7xl" px={{ base: 4, md: 8 }}>
-          <Flex
-            direction={{ base: "column", md: "row" }}
-            align="center"
-            justify="space-between"
-            gap={6}
-          >
-            {/* Paystack Logo */}
-            <Box>
-              <Image
-                src={Premium}
-                alt="Premium Trust Bank"
-                h={{ base: "40px", md: "60px" }}
-                objectFit="contain"
-              />
-            </Box>
+<Box
+  bg="white"
+  py={6}
+  mt={16}
+  borderTop="1.5px solid #2A653F" // ✅ slim divider line
+>
+  <Container maxW="7xl" px={{ base: 4, md: 8 }}>
+  <Flex
+    direction="row"
+    align="center"
+    justify="center"   // ✅ centers everything horizontally
+    gap={32}            // ✅ base spacing
+    flexWrap="wrap"    // ✅ responsive wrapping on small screens
+  >
+    {/* Premium Trust Bank Logo */}
+    <Image
+      src={Premium}
+      alt="Premium Trust Bank"
+      h={{ base: "40px", md: "60px" }}
+      objectFit="contain"
+      mr={3} // ✅ extra spacing after logo
+    />
 
-            {/* Sponsors Text */}
-            <Text
-              fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
-              fontWeight="500"
-              textAlign="center"
-            >
-              Sponsors....
-            </Text>
+    {/* Powered by text */}
+    <Text
+      fontSize={{ base: "md", md: "lg" }}
+      fontWeight="500"
+      color="gray.700"
+      mx={2} // ✅ gives breathing room between logos
+    >
+      Powered by
+    </Text>
 
-            {/* Partner Logo */}
-            <Box>
-              <Image
-                src="https://api.builder.io/api/v1/image/assets/TEMP/86703393d57657bcc5b8f7b9c93517fa2c3868db?width=642"
-                alt="Partner"
-                h={{ base: "40px", md: "60px" }}
-                objectFit="contain"
-              />
-            </Box>
-          </Flex>
-        </Container>
-      </Box>
+    {/* NiDCOM Logo */}
+    <Image
+      src={NiDCOM}
+      alt="NiDCOM"
+      h={{ base: "75px", md: "100px" }}
+      objectFit="contain"
+      ml={3} // ✅ extra spacing before logo
+    />
+  </Flex>
+</Container>
+
+</Box>
+
     </Box>
   );
 };
