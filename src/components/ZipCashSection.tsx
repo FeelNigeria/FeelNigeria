@@ -124,6 +124,8 @@ const ZipCashSection = () => {
                 },
               }}
             >
+              // TEMP: forcing Git to detect changes
+
               <Image
                 mt={8}
                 bg="white"
