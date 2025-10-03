@@ -24,7 +24,7 @@ class Application(models.Model):
     visa_history = models.BooleanField(null=True, blank=True)
     travel_history = models.TextField(null=True, blank=True)
 
-    # Step 3: Background & Motivation (nullable)
+    # Step 3: Background & Motivation (nullable)updated
     motivation = models.TextField(null=True, blank=True)
     profession = models.CharField(max_length=200, null=True, blank=True)
     hobbies = models.TextField(null=True, blank=True)
