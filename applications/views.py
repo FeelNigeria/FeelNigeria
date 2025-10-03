@@ -6,10 +6,19 @@ from django.shortcuts import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import SessionAuthentication
 # from rest_framework_simplejwt.authentication import JWTAuthentication interchanged with TokenAuthentication
-
+# userauth/views.py (append)
+from django.http import JsonResponse
+from django.views.decorators.csrf import ensure_csrf_cookie
+from django.utils.decorators import method_decorator
 
 from .models import Application
 from .serializers import *
+
+@ensure_csrf_cookie
+def get_csrf(request):
+    # ensures csrftoken cookie is set
+    return JsonResponse({'detail': 'CSRF cookie set'})
+
 
 class Step1View(APIView):
     authentication_classes = [SessionAuthentication]
