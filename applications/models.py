@@ -19,8 +19,8 @@ class Application(models.Model):
 
     # Step 2: Travel & Visa Information
     passport_number = models.CharField(max_length=50)
-    passport_expiration = models.DateField()
-    visa_history = models.BooleanField()
+    passport_expiration = models.DateField(null=True, blank=True)
+    visa_history = models.BooleanField(null=True, blank=True)
     travel_history = models.TextField()
 
     # Step 3: Background & Motivation
